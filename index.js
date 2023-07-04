@@ -1,3 +1,4 @@
+
 const server = require("./src/server");
 const axios = require("axios");
 const { conn } = require("./src/db.js")
@@ -39,3 +40,4 @@ conn.sync({ force: true })
         });
     })
     .catch(error => console.error(error));
+
