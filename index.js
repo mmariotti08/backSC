@@ -1,1 +1,3 @@
-const hola = hola
+const hola = hola;
+
+const x= 1;
