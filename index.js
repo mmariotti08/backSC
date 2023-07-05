@@ -10,22 +10,13 @@ conn.sync({ force: true })
 
 		const productData = response.data.map(product => {
 			return {
-				id: product.id,
 				name: product.name,
                 brand_name: product.brand_name,
                 category: product.category,
-                color: product.color,
-                details: product.details,
+                color: product.details,
                 gender: product.gender,
-                grid_picture_url: product.grid_picture_url,
-                has_stock: product.has_stock,
                 main_picture_url: product.main_picture_url,
-                original_picture_url: product.original_picture_url,
                 retail_price_cents: product.retail_price_cents,
-                shoe_condition: product.shoe_condition,
-                silhouette: product.silhouette,
-                size_range: product.size_range,
-                sku: product.sku,
                 slug: product.slug,
                 status: product.status,
                 // story_html: product.story_html
