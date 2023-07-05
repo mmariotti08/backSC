@@ -20,7 +20,7 @@ conn.sync({ force: true })
                 retail_price_cents: product.retail_price_cents,
                 slug: product.slug,
                 status: product.status,
-                // story_html: product.story_html
+                
 			};
 		});
 		await conn.models.Product.bulkCreate(productData);
