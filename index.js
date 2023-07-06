@@ -1,7 +1,6 @@
-
 const server = require("./src/server");
 const axios = require("axios");
-const { conn } = require("./src/db.js")
+const { conn } = require("./src/db.js");
 
 const PORT = 3001;
 
@@ -23,7 +22,21 @@ conn.sync({ force: true })
                 
 			};
 		});
-		await conn.models.Product.bulkCreate(productData);
+
+		const createdProducts = await conn.models.Product.bulkCreate(productData);
+
+        for (let i = 0; i < createdProducts.length; i++) {
+            const product = createdProducts[i];
+            const sizes = ["7", "7.5", "8", "8.5", "9", "9.5", "10", "10.5", "11", "11.5", "12", "13", "14", "15"];
+            const stockData = sizes.map(size => {
+                return {
+                    productId: product.id,
+                    size: size,
+                    quantity: Math.floor(Math.random() * 10),
+                };
+            });
+            await conn.models.Stock.bulkCreate(stockData);
+        };
     })
     .then(() => {
         server.listen(PORT, () => {
