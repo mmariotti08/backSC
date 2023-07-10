@@ -1,3 +1,4 @@
+
 const { Product, Stock } = require("../db");
 
 const createProductBdHandlers = async (name, brand_name, category, color, gender, main_picture_url, retail_price_cents, slug, status, stocks) => {
@@ -32,3 +33,4 @@ const createProductBdHandlers = async (name, brand_name, category, color, gender
 };
 
 module.exports = { createProductBdHandlers };
+
