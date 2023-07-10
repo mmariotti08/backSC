@@ -1,15 +1,18 @@
-const { Product } = require('../db');
+const {getProductsHandlers}=require('../handlers/getProductsHandler')
 
-const getproducts = async (req, res) => {
+const getProducts = async (req, res) => {
+    const {name}=req.query
     try {
-        const products = await Product.findAll();
+        const product= await getProductsHandlers(name)
 
-        return products.length > 0
-            ? res.status(200).json(products)
-            : res.status(404).send("Products not found");
+        product.error ? res.status(400).send(product.error)
+        : res.json(product) 
+
     } catch (error) {
+        
         return res.status(500).send(error.message);
     };
 };
 
-module.exports = { getproducts };
+
+module.exports = { getProducts };

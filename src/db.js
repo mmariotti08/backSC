@@ -3,9 +3,13 @@ const { Sequelize } = require('sequelize');
 const fs = require('fs');
 const path = require('path');
 
-const { DB_USER, DB_PASSWORD, DB_HOST } = process.env;
+const { DB_USER, DB_PASSWORD, DB_HOST, DB_DEPLOY } = process.env;
 
-const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/products`, {
+// const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/products`, {
+//     logging: false,
+//     native: false
+// });
+const sequelize = new Sequelize(DB_DEPLOY, {
     logging: false,
     native: false
 });
@@ -26,9 +30,11 @@ let entries = Object.entries(sequelize.models);
 let capsEntries = entries.map((entry) => [entry[0][0].toUpperCase() + entry[0].slice(1), entry[1]]);
 sequelize.models = Object.fromEntries(capsEntries);
 
-const { Product } = sequelize.models;
+const { Product, Stock } = sequelize.models;
 
 // relaciones aquí
+Product.hasMany(Stock, { foreignKey: 'productId' });
+Stock.belongsTo(Product, { foreignKey: 'productId' });
 
 module.exports = {
 	...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');

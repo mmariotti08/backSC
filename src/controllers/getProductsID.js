@@ -1,18 +1,19 @@
-const { Product } = require('../db.js');
+const {getIdHandler}=require('../handlers/getIdHandlers')
 
 
 const getProductsID = async (req, res) => {
     const {id}  =  req.params;
-    console.log(id);
-    try {
-        const p = await Product.findByPk(id);
-        if(!p){
-            return res.status(404).json({error: 'Not Found'})
-        }
-        res.json(p)
-    } catch (error) {
-        res.status(500).json({error: "Error getting products"})
-    }
+    try{
+        const response= await getIdHandler(id)
 
+        response.error ? res.status(400).send(response.error)
+        : res.json(response)
+
+    }catch(error){
+        return res.status(500).json({error: "Error getting products"})
+
+    }
 }
+
+
 module.exports ={getProductsID}
