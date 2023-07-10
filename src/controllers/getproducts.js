@@ -1,6 +1,6 @@
 const {getProductsHandlers}=require('../handlers/getProductsHandler')
 
-const getproducts = async (req, res) => {
+const getProducts = async (req, res) => {
     const {name}=req.query
     try {
         const product= await getProductsHandlers(name)
@@ -8,11 +8,11 @@ const getproducts = async (req, res) => {
         product.error ? res.status(400).send(product.error)
         : res.json(product) 
 
-
     } catch (error) {
         
         return res.status(500).send(error.message);
     };
 };
 
-module.exports = { getproducts };
+
+module.exports = { getProducts };
