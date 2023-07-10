@@ -32,7 +32,7 @@ conn.sync({ force: true })
                 return {
                     productId: product.id,
                     size: size,
-                    quantity: Math.floor(Math.random() * 10),
+                    quantity: product.id === 2 ? 0 : Math.floor(Math.random() * 3),
                 };
             });
             await conn.models.Stock.bulkCreate(stockData);
