@@ -13,6 +13,7 @@ const sequelize = new Sequelize(DB_DEPLOY, {
     logging: false,
     native: false
 });
+//bhaasdada
 
 const basename = path.basename(__filename);
 
