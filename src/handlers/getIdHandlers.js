@@ -1,3 +1,4 @@
+
 const { Product, Stock } = require('../db');
 
 const getIdHandler=async(id)=>{
@@ -11,7 +12,7 @@ const getIdHandler=async(id)=>{
         ]});
 
         if (!responseDb){
-            return {error: `the shoes num ${id} not found `}
+            return {error: `the shoes num ${id} not found` }
         }else{
             return responseDb
         }
