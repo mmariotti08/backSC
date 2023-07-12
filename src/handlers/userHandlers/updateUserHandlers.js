@@ -26,7 +26,8 @@ const updateUserHandlers=async(name, phone, last_name, id)=>{
         
     }catch(error){
 
-        return error.message;
+      return error.message;
+      
     }
 
 }

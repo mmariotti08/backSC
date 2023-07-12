@@ -8,7 +8,7 @@ try {
   if(!deleteStockElement) {
     return {error: `Cant found element num ${id}`}
   } else {
-    return deleteStockElement
+    return {message: `Stock element deleted successfully`};
   }
 } catch (error) {
   return error.message
