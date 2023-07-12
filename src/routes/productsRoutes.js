@@ -5,6 +5,8 @@ const {createProduct}= require('../controllers/createProduct')
 const {updateProduct}= require('../controllers/updateProduct')
 const {deleteProduct}= require('../controllers/deleteProduct')
 
+
+
 productsRoutes.get('/', getProducts);
 productsRoutes.get('/:id', getProductsID);
 productsRoutes.post('/', createProduct );
