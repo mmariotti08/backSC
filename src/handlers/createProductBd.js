@@ -8,7 +8,7 @@ const createProductBdHandlers = async (name, brand_name, category, color, gender
 			brand_name,
 			category,
 			color,
-			// gender,
+			gender,
 			main_picture_url,
 			retail_price_cents,
 			slug,

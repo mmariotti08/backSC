@@ -22,7 +22,7 @@ const getProductsHandlers=async(name)=>{
                 include: [
                     {
                         model: Stock,
-                        attributes: ['size', 'quantity']
+                        // attributes: ['size', 'quantity']
                     }
                 ]
             });
