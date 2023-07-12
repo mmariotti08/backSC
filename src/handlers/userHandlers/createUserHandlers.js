@@ -1,16 +1,17 @@
 const {User}=require('../../db')
 
-const createUserHandlers=async(name,  mail, phone, password, last_name)=>{
+const createUserHandlers=async(name, mail, password, phone, last_name)=>{
+    
     try{
         const [user, create]=await User.findOrCreate({
-            where: {mail: `%${mail}%`},
-            default: {name, phone, password, last_name}
+            where: {mail},
+            defaults: {name, password, last_name, phone}
         })
 
         if (create){
             return {message: 'new user registered successfully', user}
         }else{
-            return {message: 'already registered user', user}
+            return {message: `email: ${mail} was already registered previously`}
 
         }
 
