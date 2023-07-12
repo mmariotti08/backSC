@@ -7,5 +7,4 @@ stocksRoutes.get('/', getStocksControllers);
 stocksRoutes.get('/:id', getStocksID_Controllers);
 stocksRoutes.delete('/:id', deleteStockController);
 
-
 module.exports = stocksRoutes;
