@@ -2,7 +2,7 @@ const server = require("./src/server");
 const axios = require("axios");
 const { conn } = require("./src/db.js");
 
-const PORT = process.env.PORT
+const PORT = 3001;
 
 conn.sync({ force: true })
     .then(async () => {
@@ -19,7 +19,6 @@ conn.sync({ force: true })
                 retail_price_cents: product.retail_price_cents,
                 slug: product.slug,
                 status: product.status,
-                
 			};
 		});
 
