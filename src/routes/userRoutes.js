@@ -7,13 +7,14 @@ const {getUserControllersID}=require('../controllers/userControllers/getUserCont
 const {updateAdmControllers}=require('../controllers/userControllers/updateAdmControllers');
 const {updAdministratorController}=require('../controllers/userControllers/updAdministratorController');
 const {loginUserCompare}=require('../controllers/userControllers/loginUserCompare')
+const { checkAuth } = require('../middleware/auth');
 
 
 userRoutes.post('/',createUserControllers)
 
 userRoutes.post('/login',loginUserCompare)
 
-userRoutes.put('/:id', updateUserControllers)
+userRoutes.put('/:id', checkAuth, updateUserControllers)
 
 userRoutes.put('/act/:id', updateAdmControllers)
 

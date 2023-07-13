@@ -1,5 +1,5 @@
 const {User}=require('../../db')
-const {tokenSing, verifyToken}=require('../../helpers/token')
+const {tokenSing}=require('../../helpers/token')
 
 const {compare}=require('../../helpers/helpers')
 
