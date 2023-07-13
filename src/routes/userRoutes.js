@@ -6,9 +6,12 @@ const {getUsersControllers}=require('../controllers/userControllers/getUserContr
 const {getUserControllersID}=require('../controllers/userControllers/getUserControllersID');
 const {updateAdmControllers}=require('../controllers/userControllers/updateAdmControllers');
 const {updAdministratorController}=require('../controllers/userControllers/updAdministratorController');
+const {loginUserCompare}=require('../controllers/userControllers/loginUserCompare')
 
 
 userRoutes.post('/',createUserControllers)
+
+userRoutes.post('/login',loginUserCompare)
 
 userRoutes.put('/:id', updateUserControllers)
 

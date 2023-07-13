@@ -1,5 +1,5 @@
 const {createUserHandlers}=require('../../handlers/userHandlers/createUserHandlers')
-const {encryptPassword, compare}=require('../../helpers/helpers')
+const {encryptPassword}=require('../../helpers/helpers')
 
 const createUserControllers=async(req,res)=>{
     try{
