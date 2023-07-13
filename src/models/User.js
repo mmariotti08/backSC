@@ -7,12 +7,10 @@ module.exports = (sequelize) => {
             defaultValue: DataTypes.UUIDV4,
             primaryKey: true
 		},
-        name: {
+        fullName: {
 			type: DataTypes.STRING,
-			allowNull: false
-		},
-		last_name: {
-			type: DataTypes.STRING,
+            allowNull: false,
+			
 		},
         phone: {
             type: DataTypes.INTEGER,
@@ -20,7 +18,6 @@ module.exports = (sequelize) => {
         mail: {
             type: DataTypes.STRING,
             allowNull: false,
-            unique: true
         },
         password : {
             type: DataTypes.STRING,

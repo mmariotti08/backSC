@@ -2,13 +2,13 @@ const {createUserHandlers}=require('../../handlers/userHandlers/createUserHandle
 
 const createUserControllers=async(req,res)=>{
 
-    const {name, mail, password, phone, last_name}=req.body
+    const {fullName, mail, password, phone}=req.body
 
     try{
 
-        if (!name || !mail) throw Error('missing data for registration')
+        if (!fullName || !mail) throw Error('missing data for registration')
 
-        const response= await createUserHandlers(name, mail, password, phone, last_name)
+        const response= await createUserHandlers(fullName, mail, password, phone)
 
         response.error
         ? res.status(400).send(response.error)
