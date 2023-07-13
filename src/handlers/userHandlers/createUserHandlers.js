@@ -1,6 +1,6 @@
 const {User}=require('../../db')
 
-const createUserHandlers=async(name, mail, password, phone, last_name)=>{
+const createUserHandlers=async({name, mail, password, phone, last_name})=>{
     
     try{
         const [user, create]=await User.findOrCreate({
