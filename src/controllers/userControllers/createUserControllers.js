@@ -4,7 +4,7 @@ const {encryptPassword}=require('../../helpers/helpers')
 const createUserControllers=async(req,res)=>{
     try{
         const {name, mail, password, phone, last_name}=req.body
-        if (!name|| !mail || !password) throw Error('missing data for registration')
+        if ( !mail || !password) throw Error('missing data for registration')
 
         const passwordHash=await encryptPassword(password)
 
