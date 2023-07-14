@@ -2,7 +2,6 @@ const {updateUserHandlers}=require('../../handlers/userHandlers/updateUserHandle
 
 const updateUserControllers=async(req,res)=>{
     const {name, phone, last_name, address}=req.body
-    console.log(req.body);
     const {id}=req.params
     try{
         const response= await updateUserHandlers(name, phone, last_name, id, address)
