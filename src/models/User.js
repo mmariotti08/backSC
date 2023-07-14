@@ -35,10 +35,8 @@ module.exports = (sequelize) => {
         },
         address : {
             type: DataTypes.JSON
-            
+        
         }
-
-
 
     },{
         timestamps: true

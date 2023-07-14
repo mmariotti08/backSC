@@ -1,7 +1,7 @@
 const {updateUserHandlers}=require('../../handlers/userHandlers/updateUserHandlers')
 
 const updateUserControllers=async(req,res)=>{
-    const {name, phone, last_name, address,}=req.body
+    const {name, phone, last_name, address}=req.body
     console.log(req.body);
     const {id}=req.params
     try{
