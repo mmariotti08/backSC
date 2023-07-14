@@ -15,7 +15,7 @@ module.exports = (sequelize) => {
 			type: DataTypes.STRING,
 		},
         phone: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
         },
         mail: {
             type: DataTypes.STRING,
@@ -33,8 +33,6 @@ module.exports = (sequelize) => {
             type: DataTypes.BOOLEAN,
             defaultValue: true
         }
-
-
     },{
         timestamps: true
     })

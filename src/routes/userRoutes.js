@@ -4,7 +4,9 @@ const {updateUserControllers}=require('../controllers/userControllers/updateUser
 const {deleteUserControllers}=require('../controllers/userControllers/deleteUserControllers');
 const {getUsersControllers}=require('../controllers/userControllers/getUserControllers');
 const {getUserControllersID}=require('../controllers/userControllers/getUserControllersID');
+const { accessAdmin_Controllers } = require('../controllers/userControllers/accessAdmin_Controllers');
 
+userRoutes.post('/admin', accessAdmin_Controllers);
 
 userRoutes.post('/',createUserControllers)
 
