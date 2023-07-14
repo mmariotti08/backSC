@@ -12,6 +12,7 @@ const checkActiveUserAuth = async (req, res, next) => {
         if (userData.id && userData.active === true){
             next()
         }else{
+            
             res.status(409)
             res.send({error: 'User Banned, contact to 0800-41854165 or shopConnect@gmail.com'})
 

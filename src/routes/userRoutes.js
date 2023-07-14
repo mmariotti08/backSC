@@ -12,7 +12,7 @@ const { checkAuth } = require('../middleware/auth'); //Verifica que el usuario t
 const {checkAdmAuth}=require('../middleware/adminAuth'); //Verifica que el usuario tenga propiedad Administrator en true.
 const { checkActiveUserAuth } = require('../middleware/activeUserAuth'); //Verifica que el usuario tenga propiedad active en true. En false lo banea.
 
-//Para que funcionen los middleware descomentar checkAuth, checkAdmAuth y checkActiveUserAuth de las rutas 
+//Para que funcionen los middleware descomentar checkAuth, checkAdmAuth y checkActiveUserAuth de las rutas
 //todas las rutas son /user
 userRoutes.post('/', createUserControllers)//Para crear un usuario (Para registrarse, propiedades mail y password son obligatorias)
 
