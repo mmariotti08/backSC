@@ -13,7 +13,7 @@ module.exports = (sequelize) => {
         type: DataTypes.INTEGER,
       },
       description: {
-        type: DataTypes.ARRAY(DataTypes.JSON),
+        type: DataTypes.STRING,
       },
       status: {
         type: DataTypes.STRING,
