@@ -10,6 +10,7 @@ const loginUserHandlers=async(mail,password)=>{
         })
 
         if (!userLogin) throw Error(`mail: ${mail} not found`)
+        if (userLogin.active === false) throw Error(`User: ${mail} Banned, contact to 0800-41854165 or shopConnect@gmail.com`)
 
         const checkPassword= await compare(password, userLogin.password)
 

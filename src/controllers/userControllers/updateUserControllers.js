@@ -5,7 +5,6 @@ const updateUserControllers=async(req,res)=>{
     const {id}=req.params
     try{
         const response= await updateUserHandlers(name, phone, last_name, id, address)
-        console.log('controllers',response)
 
         response.error ? res.status(400).send(response.error) : res.json(response)
 

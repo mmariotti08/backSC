@@ -1,15 +1,15 @@
-const { verifyToken}=require('../helpers/token')
-const User=require('../models/User')
+const { verifyToken }=require('../helpers/token')
+const { User }=require('../db')
 
 const checkActiveUserAuth = async (req, res, next) => {
+
 
     try{
         const token = req.headers.authorization.split(' ').pop();
         const tokenData= await verifyToken(token)
-
         const userData= await User.findByPk(tokenData.id)
 
-        if (userData && userData.active === true){
+        if (userData.id && userData.active === true){
             next()
         }else{
             
@@ -23,4 +23,4 @@ const checkActiveUserAuth = async (req, res, next) => {
     }
 }
 
-module.exports = {checkActiveUserAuth}
+module.exports = { checkActiveUserAuth }
