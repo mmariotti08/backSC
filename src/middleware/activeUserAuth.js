@@ -9,9 +9,10 @@ const checkActiveUserAuth = async (req, res, next) => {
 
         const userData= await User.findByPk(tokenData.id)
 
-        if (userData && userData.active === false){
+        if (userData && userData.active === true){
             next()
         }else{
+            
             res.status(409)
             res.send({error: 'User Banned, contact to 0800-41854165 or shopConnect@gmail.com'})
 

@@ -16,9 +16,9 @@ const { checkActiveUserAuth } = require('../middleware/activeUserAuth'); //Verif
 //todas las rutas son /user
 userRoutes.post('/', createUserControllers)//Para crear un usuario (Para registrarse, propiedades mail y password son obligatorias)
 
-userRoutes.post('/login',checkActiveUserAuth, loginUserCompare) //Para loguearse
+userRoutes.post('/login', loginUserCompare) //Para loguearse
 
-userRoutes.put('/:id',checkActiveUserAuth, checkAuth, updateUserControllers) //El user pueda modificar sus datos.
+userRoutes.put('/:id', updateUserControllers) //El user pueda modificar sus datos.
 
 userRoutes.put('/act/:id', updateAdmControllers) //Para cambiar e estatus al usuario para banearlo.
 
@@ -26,7 +26,7 @@ userRoutes.put('/adm/:id', updAdministratorController) //Cambiar estatus de admi
 
 userRoutes.delete('/:id', deleteUserControllers) //Borrar un usuario
 
-userRoutes.get('/', checkAuth, getUsersControllers) //Trae todos los usuarios
+userRoutes.get('/', getUsersControllers) //Trae todos los usuarios
 
 userRoutes.get('/:id', getUserControllersID) //Para traer un usuario especifico por Id
 
