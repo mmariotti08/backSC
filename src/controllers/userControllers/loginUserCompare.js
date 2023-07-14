@@ -3,7 +3,6 @@ const {loginUserHandlers}=require('../../handlers/userHandlers/loginUserHandlers
 const loginUserCompare=async(req,res)=>{
     try{
         const {mail, password}=req.body
-        console.log(mail, password)
 
         const response= await loginUserHandlers(mail, password)
 

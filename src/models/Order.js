@@ -8,10 +8,9 @@ module.exports = (sequelize) => {
             primaryKey: true
 		},
         description : {
-            type: DataTypes.ARRAY(DataTypes.STRING)
+            type: DataTypes.ARRAY(DataTypes.JSON)
         }
         
-
     },{
         timestamps: true
     })
