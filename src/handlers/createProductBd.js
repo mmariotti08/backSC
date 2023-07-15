@@ -15,7 +15,6 @@ const createProductBdHandlers = async (name, brand_name, category, color, gender
 		});
 
 		const createStocks = stock.map(stock => {
-			console.log(stock);
 			return {
 				productId: createProduct.id,
 				size: stock.size,
