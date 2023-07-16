@@ -4,7 +4,6 @@ const getProductDraft_Controllers = async (req, res) => {
     try {
         const product = await getProductsDraft_Handlers();
 
-        console.log(product.error);
         product.error
             ? res.status(400).json(product.error)
             : res.status(200).json(product);

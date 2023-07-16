@@ -5,19 +5,21 @@ const {deleteUserControllers}=require('../controllers/userControllers/deleteUser
 const {getUsersControllers}=require('../controllers/userControllers/getUserControllers');
 const {getUserControllersID}=require('../controllers/userControllers/getUserControllersID');
 const { accessAdmin_Controllers } = require('../controllers/userControllers/accessAdmin_Controllers');
+const { getUserDraft_Controllers } = require('../controllers/userControllers/getUserDraft_Controllers');
+
+userRoutes.get('/draft', getUserDraft_Controllers)
 
 userRoutes.post('/admin', accessAdmin_Controllers);
 
 userRoutes.post('/',createUserControllers)
 
+userRoutes.get('/', getUsersControllers)
+
 userRoutes.put('/:id', updateUserControllers)
 
 userRoutes.delete('/:id', deleteUserControllers)
 
-userRoutes.get('/', getUsersControllers)
-
 userRoutes.get('/:id', getUserControllersID)
-
 
 module.exports=userRoutes;
 
