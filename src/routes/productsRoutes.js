@@ -1,11 +1,11 @@
 const productsRoutes = require('express').Router();
 
-const { getProducts } = require('../controllers/getproducts');
-const { getProductsID } =require('../controllers/getProductsID');
-const { createProduct }= require('../controllers/createProduct');
-const { updateProduct } = require('../controllers/updateProduct');
-const { deleteProduct } = require('../controllers/deleteProduct');
-const { getProductDraft_Controllers } = require('../controllers/getProductDraft_Controllers');
+const { getProducts } = require('../controllers/productControllers/getproducts');
+const { getProductsID } =require('../controllers/productControllers/getProductsID');
+const { createProduct }= require('../controllers/productControllers/createProduct');
+const { updateProduct } = require('../controllers/productControllers/updateProduct');
+const { deleteProduct } = require('../controllers/productControllers/deleteProduct');
+const { getProductDraft_Controllers } = require('../controllers/productControllers/getProductDraft_Controllers');
 const { checkAuth } = require('../middleware/auth');
 const { checkAdmAuth }=require('../middleware/adminAuth');
 

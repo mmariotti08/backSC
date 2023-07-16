@@ -1,4 +1,4 @@
-const { getProductsDraft_Handlers } = require("../handlers/getProductDraft_Handlers");
+const { getProductsDraft_Handlers } = require("../../handlers/productsHandlres/getProductDraft_Handlers");
 
 const getProductDraft_Controllers = async (req, res) => {
     try {

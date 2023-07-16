@@ -1,5 +1,5 @@
 
-const { Product, Stock } = require('../db');
+const { Product, Stock } = require('../../db');
 
 const getIdHandler=async(id)=>{
     try {
