@@ -32,7 +32,13 @@ module.exports = (sequelize) => {
         active : {
             type: DataTypes.BOOLEAN,
             defaultValue: true
+        },
+        address : {
+            type: DataTypes.JSON
+        
         }
+
+
     },{
         timestamps: true
     })

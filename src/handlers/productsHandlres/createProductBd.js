@@ -1,4 +1,4 @@
-const { Product, Stock } = require("../db");
+const { Product, Stock } = require("../../db");
 
 const createProductBdHandlers = async (name, brand_name, category, color, gender, main_picture_url, retail_price_cents, slug, status, stock) => {
 	try {
@@ -15,7 +15,6 @@ const createProductBdHandlers = async (name, brand_name, category, color, gender
 		});
 
 		const createStocks = stock.map(stock => {
-			console.log(stock);
 			return {
 				productId: createProduct.id,
 				size: stock.size,

@@ -1,4 +1,4 @@
-const { createProductBdHandlers } = require('../handlers/createProductBd');
+const { createProductBdHandlers } = require('../../handlers/productsHandlres/createProductBd');
 
 const createProduct = async(req, res)=>{
     try{
@@ -20,12 +20,10 @@ const createProduct = async(req, res)=>{
         
         const product_stock = await createProductBdHandlers(name, brand_name, category, color, gender, main_picture_url, retail_price_cents, slug, status, stock);
 
-        console.log(product_stock);
         product_stock.error
             ? res.status(400).send(product_stock.error)
             : res.status(200).json(product_stock);
     }catch(error){
-        console.log("AQUI 4");
         return res.status(500).json({error: error.message});
     };
 };
