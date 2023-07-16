@@ -1,4 +1,4 @@
-const { Order, User, Product } = require("../../db");
+const { Order, User, Product, OrderProduct } = require("../../db");
 
 const createOrderHandlers = async (
   products,
@@ -17,6 +17,7 @@ const createOrderHandlers = async (
       payment_method,
       shipping_address,
       delivery_date,
+      userId,
     });
 
     // Asociar la orden al usuario
@@ -25,16 +26,21 @@ const createOrderHandlers = async (
       await order.setUser(user);
     }
 
-    // Crear las relaciones entre la orden y los productos en la tabla intermedia orderProduct
+    // Crear las relaciones entre la orden y los productos en la tabla intermedia OrderProduct
     for (const product of products) {
-      const { productId, quantity } = product;
+      const { productId, quantity, size } = product;
 
       // Buscar el producto correspondiente
       const productObj = await Product.findByPk(productId);
 
       if (productObj) {
-        // Agregar la cantidad a la relación utilizando la función `addProduct` generada automáticamente por Sequelize
-        await order.addProduct(productObj, { through: { quantity } });
+        // Crear el OrderProduct con los datos proporcionados
+        await OrderProduct.create({
+          orderId: order.id,
+          productId: productObj.id,
+          quantity,
+          size,
+        });
       }
     }
 
