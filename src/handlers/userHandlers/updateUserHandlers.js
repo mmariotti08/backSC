@@ -6,7 +6,7 @@ const updateUserHandlers=async(name, phone, last_name, id)=>{
         const user= await User.findByPk(id);
 
         if (!user) throw Error (`user name: ${name} not found`)
-        if (user.active===false) throw Error (`user name: ${name} inactive`)
+        // if (user.active===false) throw Error (`user name: ${name} inactive`)
 
         const updatedData = {};
 

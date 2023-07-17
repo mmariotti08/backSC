@@ -1,4 +1,4 @@
-const { deleteProductHandler } = require('../handlers/deleteProductHandler')
+const { deleteProductHandler } = require('../../handlers/productsHandlres/deleteProductHandler')
 
 const deleteProduct = async (req, res) => {
   const { id } =req.params

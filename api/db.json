@@ -1,7 +1,321 @@
 {
-  "healthcheck": {
-    "message": "OK"
-  },
+  "users": [
+    {
+      "name": "Admin",
+      "last_name": "",
+      "mail": "admin@admin.com",
+      "password": "123456789",
+      "phone": "",
+      "administratos": true,
+      "active": true
+    },
+    {
+      "name": "Pedro",
+      "last_name": "González",
+      "mail": "pedro.gonzalez@example.cl",
+      "password": "Pa$$w0rd",
+      "phone": "+56 9 1234 5678",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "María",
+      "last_name": "Rodríguez",
+      "mail": "maria.rodriguez@example.cl",
+      "password": "123456789",
+      "phone": "+56 9 2345 6789",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Juan",
+      "last_name": "Pérez",
+      "mail": "juan.perez@example.cl",
+      "password": "Qwerty123!",
+      "phone": "+56 9 3456 7890",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Carolina",
+      "last_name": "López",
+      "mail": "carolina.lopez@example.cl",
+      "password": "Password1!",
+      "phone": "+56 9 4567 8901",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Andrés",
+      "last_name": "Fernández",
+      "mail": "andres.fernandez@example.cl",
+      "password": "abcDEF456$",
+      "phone": "+56 9 5678 9012",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Marta",
+      "last_name": "García",
+      "mail": "marta.garcia@example.cl",
+      "password": "iloveyou",
+      "phone": "+56 9 6789 0123",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Esteban",
+      "last_name": "Martínez",
+      "mail": "esteban.martinez@example.cl",
+      "password": "Pass123!",
+      "phone": "+56 9 7890 1234",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Sofía",
+      "last_name": "Silva",
+      "mail": "sofia.silva@example.cl",
+      "password": "SecurePass",
+      "phone": "+56 9 8901 2345",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Nicolás",
+      "last_name": "Gómez",
+      "mail": "nicolas.gomez@example.cl",
+      "password": "p@$$w0rd",
+      "phone": "+56 9 9012 3456",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Valentina",
+      "last_name": "Torres",
+      "mail": "valentina.torres@example.cl",
+      "password": "987654321",
+      "phone": "+56 9 0123 4567",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Diego",
+      "last_name": "Fernández",
+      "mail": "diego.fernandez@example.ar",
+      "password": "Pa$$w0rd",
+      "phone": "+54 9 1234 5678",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Sofía",
+      "last_name": "González",
+      "mail": "sofia.gonzalez@example.ar",
+      "password": "123456789",
+      "phone": "+54 9 2345 6789",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Santiago",
+      "last_name": "Rodríguez",
+      "mail": "santiago.rodriguez@example.ar",
+      "password": "Qwerty123!",
+      "phone": "+54 9 3456 7890",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Valentina",
+      "last_name": "López",
+      "mail": "valentina.lopez@example.ar",
+      "password": "Password1!",
+      "phone": "+54 9 4567 8901",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Facundo",
+      "last_name": "Pérez",
+      "mail": "facundo.perez@example.ar",
+      "password": "abcDEF456$",
+      "phone": "+54 9 5678 9012",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Antonella",
+      "last_name": "Fernández",
+      "mail": "antonella.fernandez@example.ar",
+      "password": "iloveyou",
+      "phone": "+54 9 6789 0123",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Lucas",
+      "last_name": "García",
+      "mail": "lucas.garcia@example.ar",
+      "password": "Pass123!",
+      "phone": "+54 9 7890 1234",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Victoria",
+      "last_name": "Martínez",
+      "mail": "victoria.martinez@example.ar",
+      "password": "SecurePass",
+      "phone": "+54 9 8901 2345",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Mateo",
+      "last_name": "Silva",
+      "mail": "mateo.silva@example.ar",
+      "password": "p@$$w0rd",
+      "phone": "+54 9 9012 3456",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Emma",
+      "last_name": "Torres",
+      "mail": "emma.torres@example.ar",
+      "password": "987654321",
+      "phone": "+54 9 0123 4567",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "José",
+      "last_name": "González",
+      "mail": "jose.gonzalez@example.ve",
+      "password": "Pa$$w0rd",
+      "phone": "+58 412 123 4567",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Valeria",
+      "last_name": "Rodríguez",
+      "mail": "valeria.rodriguez@example.ve",
+      "password": "123456789",
+      "phone": "+58 412 234 5678",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Carlos",
+      "last_name": "Pérez",
+      "mail": "carlos.perez@example.ve",
+      "password": "Qwerty123!",
+      "phone": "+58 412 345 6789",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Alejandra",
+      "last_name": "López",
+      "mail": "alejandra.lopez@example.ve",
+      "password": "Password1!",
+      "phone": "+58 412 456 7890",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Daniel",
+      "last_name": "Fernández",
+      "mail": "daniel.fernandez@example.ve",
+      "password": "abcDEF456$",
+      "phone": "+58 412 567 8901",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Laura",
+      "last_name": "García",
+      "mail": "laura.garcia@example.ve",
+      "password": "iloveyou",
+      "phone": "+58 412 678 9012",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Andrés",
+      "last_name": "Martínez",
+      "mail": "andres.martinez@example.ve",
+      "password": "Pass123!",
+      "phone": "+58 412 789 0123",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "María",
+      "last_name": "Silva",
+      "mail": "maria.silva@example.ve",
+      "password": "SecurePass",
+      "phone": "+58 412 890 1234",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Luis",
+      "last_name": "Gómez",
+      "mail": "luis.gomez@example.ve",
+      "password": "p@$$w0rd",
+      "phone": "+58 412 901 2345",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Ana",
+      "last_name": "Torres",
+      "mail": "ana.torres@example.ve",
+      "password": "987654321",
+      "phone": "+58 412 012 3456",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Juan",
+      "last_name": "González",
+      "mail": "juan.gonzalez@example.co",
+      "password": "Pa$$w0rd",
+      "phone": "+57 300 123 4567",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Catalina",
+      "last_name": "Rodríguez",
+      "mail": "catalina.rodriguez@example.co",
+      "password": "123456789",
+      "phone": "+57 300 234 5678",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Felipe",
+      "last_name": "Pérez",
+      "mail": "felipe.perez@example.co",
+      "password": "Qwerty123!",
+      "phone": "+57 300 345 6789",
+      "administratos": false,
+      "active": true
+    },
+    {
+      "name": "Valentina",
+      "last_name": "López",
+      "mail": "valentina.lopez@example.co",
+      "password": "Password1!",
+      "phone": "+57 300 456 7890",
+      "administratos": false,
+      "active": true
+    }
+  ],
   "sneakers": [
     {
       "box_condition": "good_condition",

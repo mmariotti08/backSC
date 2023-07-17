@@ -1,17 +1,18 @@
 const {Op}= require('sequelize')
-const { Product, Stock } = require('../db');
-
-
+const { Product, Stock } = require('../../db');
 
 const getProductsHandlers=async(name)=>{
     try{
         if (name){
             const product= await Product.findAll({
-                where: {name : {[Op.iLike]: `%${name}%`}},
+                where: {
+                    name : {[Op.iLike]: `%${name}%`},
+                    status: "active"
+                },
                 include: Stock
             })
 
-            if (product.length>0){
+            if (product.length > 0){
                 return product
             }else{
                 return {error: `shoes: ${name} not found `}
@@ -19,10 +20,11 @@ const getProductsHandlers=async(name)=>{
 
         }else{
             const products = await Product.findAll({
+                where: { status: "active" },
                 include: [
                     {
                         model: Stock,
-                        attributes: ['size', 'quantity']
+                        // attributes: ['size', 'quantity']
                     }
                 ]
             });
