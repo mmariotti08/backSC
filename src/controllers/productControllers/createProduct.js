@@ -1,4 +1,4 @@
-const { createProductBdHandlers } = require('../handlers/createProductBd');
+const { createProductBdHandlers } = require('../../handlers/productsHandlres/createProductBd');
 
 const createProduct = async(req, res)=>{
     try{

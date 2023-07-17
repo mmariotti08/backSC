@@ -37,10 +37,26 @@ conn.sync({ force: true })
             await conn.models.Stock.bulkCreate(stockData);
         };
     })
+    .then(async () => {
+        const response = await axios.get('http://localhost:5000/users');
+
+        const usersData = response.data.map(user => {
+			return {
+				name: user.name,
+				last_name: user.last_name,
+				phone: user.phone,
+				mail: user.mail,
+				password: user.password,
+				administrator: user.administratos,
+				active: user.active
+			};
+		});
+
+		await conn.models.User.bulkCreate(usersData);
+    })
     .then(() => {
         server.listen(PORT, () => {
             console.log(`Server listening on port ${PORT}`);
         });
     })
     .catch(error => console.error(error));
-

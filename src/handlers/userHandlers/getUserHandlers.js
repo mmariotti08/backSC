@@ -6,7 +6,8 @@ const getUserHandlers=async(name)=>{
         if(name){
             const users= await User.findAll({
                 where: {
-                    name: { [Op.iLike]: `%${name}%` }
+                    name: { [Op.iLike]: `%${name}%` },
+                    active: true
                 },
                 attributes: { exclude: ['password'] }
             });
@@ -20,15 +21,13 @@ const getUserHandlers=async(name)=>{
         }else{
 
             const users = await User.findAll({
+                where: {
+                    active: true
+                },
                 attributes: { exclude: ['password'] }
             });
 
-            if (users.length>0){
-                return users
-            }else{
-                return {error: 'No registered users'}
-            }
-
+            return users
         }
 
     }catch(error){

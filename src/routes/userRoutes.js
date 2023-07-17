@@ -4,6 +4,14 @@ const {updateUserControllers}=require('../controllers/userControllers/updateUser
 const {deleteUserControllers}=require('../controllers/userControllers/deleteUserControllers');
 const {getUsersControllers}=require('../controllers/userControllers/getUserControllers');
 const {getUserControllersID}=require('../controllers/userControllers/getUserControllersID');
+
+const { accessAdmin_Controllers } = require('../controllers/userControllers/accessAdmin_Controllers');
+const { getUserDraft_Controllers } = require('../controllers/userControllers/getUserDraft_Controllers');
+
+userRoutes.get('/draft', getUserDraft_Controllers)
+
+userRoutes.post('/admin', accessAdmin_Controllers);
+
 const {updateAdmControllers}=require('../controllers/userControllers/updateAdmControllers');
 const {updAdministratorController}=require('../controllers/userControllers/updAdministratorController');
 const {loginUserCompare}=require('../controllers/userControllers/loginUserCompare')
@@ -29,7 +37,6 @@ userRoutes.delete('/:id', /* checkAuth, checkActiveUserAuth, */ deleteUserContro
 userRoutes.get('/', /* checkAuth, checkAdmAuth, */ getUsersControllers) //Trae todos los usuarios
 
 userRoutes.get('/:id', /* checkAuth, checkAdmAuth, */ getUserControllersID) //Para traer un usuario especifico por Id
-
 
 module.exports=userRoutes;
 

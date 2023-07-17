@@ -1,4 +1,4 @@
-const {updateProductHandlers}=require('../handlers/updateProductHandlers')
+const {updateProductHandlers}=require('../../handlers/productsHandlres/updateProductHandlers')
 
 const updateProduct = async (req,res) =>{
     const { product: { name, brand_name, category, color, gender, main_picture_url, retail_price_cents, slug, status }, stock } = req.body;

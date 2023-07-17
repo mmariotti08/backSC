@@ -1,4 +1,4 @@
-const { Product } = require('../db');
+const { Product } = require('../../db');
 
 const getProductsDraft_Handlers = async () => {
     try {
@@ -6,9 +6,7 @@ const getProductsDraft_Handlers = async () => {
             where: { status: "draft" }
         });
 
-        return product.length
-            ? product
-            : { error: "There are no products in draft." };
+        return product;
     } catch (error) {
         return error.message;
     };
