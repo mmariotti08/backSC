@@ -1,5 +1,5 @@
 const {Op}= require('sequelize')
-const { Product, Stock } = require('../db');
+const { Product, Stock } = require('../../db');
 
 const getProductsHandlers=async(name)=>{
     try{

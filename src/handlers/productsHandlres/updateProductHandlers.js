@@ -1,4 +1,4 @@
-const { Product, Stock } = require('../db');
+const { Product, Stock } = require('../../db');
 
 const updateProductHandlers = async (product, stock, id) => {
 	const { name, brand_name, category, color, gender, main_picture_url, retail_price_cents, slug, status } = product;

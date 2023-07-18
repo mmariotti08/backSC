@@ -1,4 +1,4 @@
-const {getProductsHandlers}=require('../handlers/getProductsHandler')
+const {getProductsHandlers}=require('../../handlers/productsHandlres/getProductsHandler')
 
 const getProducts = async (req, res) => {
     const {name}=req.query
