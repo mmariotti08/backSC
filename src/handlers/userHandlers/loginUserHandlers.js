@@ -17,8 +17,17 @@ const loginUserHandlers=async(mail,password)=>{
         const tokenSession=await tokenSing(userLogin)
 
         if (checkPassword){
+            const cleanUser={
+                id: userLogin.id,
+                mail: userLogin.mail,
+                name: userLogin.name,
+                active: userLogin.active,
+                administrator: userLogin.administrator
+
+            };
+
             return ({
-                data: userLogin,
+                data: cleanUser,
                 tokenSession
             })
             
