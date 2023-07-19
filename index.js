@@ -1,8 +1,11 @@
 const server = require("./src/server");
 const axios = require("axios");
 const { conn } = require("./src/db.js");
+const Stripe = require("stripe");
 
-const PORT = process.env.PORT
+
+
+const PORT = 3001;
 
 conn.sync({ force: true })
     .then(async () => {
@@ -10,7 +13,7 @@ conn.sync({ force: true })
 
 		const productData = response.data.map(product => {
 			return {
-				name: product.name,
+                name: product.name,
                 brand_name: product.brand_name,
                 category: product.category,
                 color: product.details,
@@ -19,7 +22,7 @@ conn.sync({ force: true })
                 retail_price_cents: product.retail_price_cents,
                 slug: product.slug,
                 status: product.status,
-                
+                idPrice: product.idPrice,
 			};
 		});
 

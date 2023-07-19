@@ -7,12 +7,14 @@ const deleteProductHandler = async (id) => {
 
         // Eliminar el producto
         const deletedProduct = await Product.destroy({ where: { id: id } });
+
         if(!deletedProduct) {
           return {error: `the shoes num ${id} not found `}
         } else {
-          return deletedProduct
+          return  {message: `Product successfully deleted`}
         }
   } catch (error) {
+    
     return error.message
   }
 }
