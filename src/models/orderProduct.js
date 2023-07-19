@@ -21,7 +21,7 @@ module.exports = (sequelize) => {
           fields: ["productId", "orderId", "size"],
         },
       },
-      timestamps: true,
+      timestamps: false,
     }
   );
 };
