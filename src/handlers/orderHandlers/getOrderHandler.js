@@ -2,7 +2,6 @@ const { Order, OrderProduct } = require('../../db');
 
 const getOrdersHandler = async () => {
 try {
-    // Obtener todas las órdenes y sus productos asociados
     const orders = await Order.findAll({
       include: [
         {
