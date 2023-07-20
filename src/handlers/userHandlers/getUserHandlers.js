@@ -20,12 +20,7 @@ const getUserHandlers=async(name)=>{
 
         }else{
 
-            const users = await User.findAll({
-                where: {
-                    active: true
-                },
-                attributes: { exclude: ['password'] }
-            });
+            const users = await User.findAll();
 
             return users
         }
