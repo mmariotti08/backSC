@@ -4,6 +4,7 @@ const { getOrderController }=require('../controllers/orderControllers/getOrderCo
 const { getOrderId }=require('../controllers/orderControllers/getOrderId')
 
 orderRoutes.post('/', createOrder )
+
 orderRoutes.get('/', getOrderController)
 orderRoutes.get('/:id', getOrderId)
 

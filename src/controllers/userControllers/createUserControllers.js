@@ -3,12 +3,14 @@ const {encryptPassword}=require('../../helpers/helpers')
 
 const createUserControllers=async(req,res)=>{
     try{
-        const {name, mail, password, phone, last_name, address}=req.body
-        if ( !mail || !password) throw Error('missing data for registration')
+        const { name, mail, password, phone, last_name, address, idUser }=req.body
+        console.log('objectController :>> ', name, mail, password, phone, last_name, address, idUser);
+        if ( !mail ) throw Error('missing mail for data for registration')
+        if (password)  {
+            await encryptPassword(password)
+        }
 
-        const passwordHash=await encryptPassword(password)
-
-        const response= await createUserHandlers({name, mail, password: passwordHash , phone, last_name, address})
+        const response= await createUserHandlers({name, mail, password , phone, last_name, address, idUser})
 
         response.error
         ? res.status(400).send(response.error)

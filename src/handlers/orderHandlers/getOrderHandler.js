@@ -1,13 +1,21 @@
-const { Order, Product, OrderProduct } = require('../../db');
+const { Order, OrderProduct } = require('../../db');
 
 const getOrdersHandler = async () => {
 try {
-    // Obtener todas las órdenes y sus productos asociados
     const orders = await Order.findAll({
-      include: OrderProduct
+      include: [
+        {
+          model: OrderProduct
+        }
+      ]
     });
 
-    return orders;
+    if (orders.length>0){
+      return orders;
+    }else{
+      return {error: 'there is no created order'}
+    }
+
 } catch (error) {
   return error.message
 }
