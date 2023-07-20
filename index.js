@@ -15,7 +15,7 @@ conn.sync({ force: true })
                 category: product.category,
                 color: product.details,
                 gender: product.gender,
-                main_picture_url: product.main_picture_url,
+                main_picture_url: Array.isArray(product.main_picture_url) ? product.main_picture_url : [product.main_picture_url],
                 retail_price_cents: product.retail_price_cents,
                 slug: product.slug,
                 status: product.status,
