@@ -1,5 +1,6 @@
 const {createUserHandlers}=require('../../handlers/userHandlers/createUserHandlers')
 const {encryptPassword}=require('../../helpers/helpers')
+const{transporter}=require('../../mail/mailer')
 
 const createUserControllers=async(req,res)=>{
     try{
@@ -9,6 +10,12 @@ const createUserControllers=async(req,res)=>{
         const passwordHash=await encryptPassword(password)
 
         const response= await createUserHandlers({name, mail, password: passwordHash , phone, last_name, address})
+
+       
+
+
+
+
 
         response.error
         ? res.status(400).send(response.error)
