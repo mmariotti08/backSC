@@ -1,12 +1,14 @@
 const { User } = require('../../db');
 const { transporter } = require('../../mail/mailer');
 
+
 const createUserHandlers = async ({ name, mail, password, phone, last_name, address }) => {
   try {
     const [user, create] = await User.findOrCreate({
       where: { mail },
       defaults: { name, password, last_name, phone, address }
     });
+
 
     if (create) {
       const userData = {
