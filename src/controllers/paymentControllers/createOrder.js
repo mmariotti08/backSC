@@ -77,10 +77,11 @@ const createOrder=async(req,res)=>{
             currency_id: 'ARS',
             quantity: 1,
             description: element.brand_name,
-            picture_url: element.main_picture_url,
             id: element.id,
             category_id: element.size
         })): [];
+
+        //<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
 
 
         const result= await mercadopago.preferences.create({
@@ -92,9 +93,8 @@ const createOrder=async(req,res)=>{
                 failure: 'http://localhost:3001/payment/failure',
                 pending: 'http://localhost:3001/payment/pending',
             },
-            notification_url: 'https://1b49-2803-9800-9001-c29f-38e0-d923-61ec-174.ngrok-free.app/payment/webhook'
+            notification_url: 'https://1ec5-2803-9800-9001-c29f-1d7b-f98f-9dd5-3320.ngrok-free.app/payment/webhook'
         });
-        console.log('iddd++++++:',user.id)
     
         res.send(result.body)
 
