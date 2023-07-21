@@ -18,7 +18,7 @@ const receiveWebHookControllers = async (req, res) => {
             products: data.response.additional_info.items.map(element => ({
                 productId: element.id,
                 size: element.category_id,
-                quantity: 1
+                quantity: element.quantity
             }))
         }
 
