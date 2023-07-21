@@ -28,10 +28,10 @@ const createUserHandlers = async ({ name, mail, password, phone, last_name, addr
       
       try {
         await transporter.sendMail({
-            from: 'mariottimatias08@gmail.com',
+            from: 'shopconnecthenry@gmail.com',
             to: mail,
             subject: 'Welcome to ShopConnect the best shoes, Buenos Aires-Argentina 🌎👟',
-            html: `<h1>Welcome ${name},</h1><h2>Thank you for signing up for ShopConnect.</h2><a href="https://shopconnectt.onrender.com/">GO STORE</a>`
+            html: `<h1>Welcome ${name} :),</h1><h2>Thank you for signing up for ShopConnect.</h2><a href="https://shopconnectt.onrender.com/">GO STORE</a>`
           });
         return { message: 'new user registered successfully', userData };
       } catch (error) {
