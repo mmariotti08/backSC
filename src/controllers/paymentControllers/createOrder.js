@@ -30,7 +30,7 @@ const createOrder=async(req,res)=>{
             items: itemsProduct,
             external_reference: user.id,
             installments: 1,
-            backs_urls:{
+            back_urls:{
                 success: 'http://localhost:3001/payment/success',
                 failure: 'http://localhost:3001/payment/failure',
                 pending: 'http://localhost:3001/payment/pending',
@@ -39,7 +39,7 @@ const createOrder=async(req,res)=>{
             //back_urls: 'https://shopconnectt.onrender.com/'
         });
 
-        //https://shopconnectt.onrender.com/     para el deploy
+        //https://shopconnectt.onrender.com/
     
         res.send(result.body)
 
