@@ -38,7 +38,7 @@ const createOrder=async(req,res)=>{
             notification_url: 'https://1ec5-2803-9800-9001-c29f-1d7b-f98f-9dd5-3320.ngrok-free.app/payment/webhook'
         });
 
-        //https://shopconnectt.onrender.com/     para el deploy
+        //https://shopconnectt.onrender.com/
     
         res.send(result.body)
 
