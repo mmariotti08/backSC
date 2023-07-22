@@ -6,9 +6,6 @@ const getStocksID_Handlers = async (id) => {
         const stocks = await Stock.findAll({
             where: {
                 productId: id,
-                // quantity: {
-                //     [Op.gt]: 0
-                // }
             }
         });
 
