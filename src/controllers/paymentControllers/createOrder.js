@@ -5,8 +5,11 @@ const {TOKEN_MP } = process.env;
 
 const createOrder=async(req,res)=>{
     const data=req.body
+    console.log('dataaa', data);
     const product=data.cardPey
+    console.log('prtoduttt', product);
     const user=data.idUser
+    console.log('iduser', user);
 
     try{
         mercadopago.configure({
@@ -23,6 +26,8 @@ const createOrder=async(req,res)=>{
             category_id: element.size
         })): [];
 
+        console.log('itemsproduct', itemsProduct);
+
 
 
         const result= await mercadopago.preferences.create({
@@ -37,7 +42,9 @@ const createOrder=async(req,res)=>{
             notification_url: 'https://shopconnect-bj22.onrender.com/payment/webhook'
         });
 
-            //https://shopconnect-bj22.onrender.com/
+        console.log('result.body', result.body);
+
+         //https://shopconnect-bj22.onrender.com/
         res.send(result.body)
 
     }catch(error){
