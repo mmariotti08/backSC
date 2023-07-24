@@ -34,7 +34,7 @@ const createOrder=async(req,res)=>{
                 failure: 'http://localhost:3001/payment/failure',
                 pending: 'http://localhost:3001/payment/pending',
             },
-            notification_url: 'https://9884-2803-9800-9001-c29f-886e-5ad6-d3fa-a7e.ngrok-free.app/payment/webhook'
+            notification_url: 'https://3ab0-2803-9800-9001-c29f-595d-6da0-6a4b-30e9.ngrok-free.app/payment/webhook'
         });
 
     
