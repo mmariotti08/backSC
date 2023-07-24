@@ -54,37 +54,37 @@ conn.sync({ force: true })
 
 		await conn.models.User.bulkCreate(usersData);
     })
-    // .then(async () => {
-    //     const response = await axios.get('http://localhost:5000/order');
-    //     const orders = response.data;
+    .then(async () => {
+        const response = await axios.get('http://localhost:5000/order');
+        const orders = response.data;
         
-    //     for (let order of orders) {
-    //         const user = await conn.models.User.findOne({
-    //             attributes: ['id'],
-    //             order: conn.literal('RANDOM()'),
-    //         });
+        for (let order of orders) {
+            const user = await conn.models.User.findOne({
+                attributes: ['id'],
+                order: conn.literal('RANDOM()'),
+            });
 
-    //         const createdOrder = await conn.models.Order.create({
-    //             userId: user.dataValues.id,
-    //             total_amount: order.total_amount,
-    //             description: order.description,
-    //             payment_method: order.payment_method,
-    //             shipping_address: order.shipping_address,
-    //             delivery_date: order.delivery_date
-    //         });
+            const createdOrder = await conn.models.Order.create({
+                userId: user.dataValues.id,
+                total_amount: order.total_amount,
+                description: order.description,
+                payment_method: order.payment_method,
+                shipping_address: order.shipping_address,
+                delivery_date: order.delivery_date
+            });
             
-    //         const c = order.products ? order.products.map(product => {
-    //             return {
-    //                 orderId: createdOrder.id,
-    //                 productId: product.productID,
-    //                 quantity: product.quantity,
-    //                 size: product.size
-    //             };
-    //         }) : [];
+            const c = order.products ? order.products.map(product => {
+                return {
+                    orderId: createdOrder.id,
+                    productId: product.productID,
+                    quantity: product.quantity,
+                    size: product.size
+                };
+            }) : [];
 
-    //         await conn.models.OrderProduct.bulkCreate(c);
-    //     };
-    // })
+            await conn.models.OrderProduct.bulkCreate(c);
+        };
+    })
     .then(() => {
         server.listen(PORT, () => {
             console.log(`Server listening on port ${PORT}`);
