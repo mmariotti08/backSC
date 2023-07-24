@@ -41,6 +41,7 @@ const createOrder=async(req,res)=>{
         res.send(result.body)
 
     }catch(error){
+        console.error(error)
         return {error: error.message}
     }
 }
