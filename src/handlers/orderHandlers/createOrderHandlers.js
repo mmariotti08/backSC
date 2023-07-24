@@ -10,6 +10,7 @@ const createOrderHandlers = async ({
   delivery_date,
   userId}
 ) => {
+  //userId, payment_method, total_amount, description, products, delivery_date, status
   try {
     // Crear la orden en la base de datos
     const order = await Order.create({

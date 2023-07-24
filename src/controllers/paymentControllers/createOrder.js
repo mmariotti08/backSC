@@ -8,6 +8,7 @@ const createOrder=async(req,res)=>{
     const product=data.cardPey
     const user=data.idUser
 
+
     try{
         mercadopago.configure({
             access_token: TOKEN_MP
@@ -35,7 +36,7 @@ const createOrder=async(req,res)=>{
                 failure: 'http://localhost:3001/payment/failure',
                 pending: 'http://localhost:3001/payment/pending',
             },
-            notification_url: 'https://382b-2803-9800-9001-c29f-886e-5ad6-d3fa-a7e.ngrok-free.app/payment/webhook'
+            notification_url: 'https://95ff-2803-9800-9001-c29f-886e-5ad6-d3fa-a7e.ngrok-free.app/payment/webhook'
         });
 
         //https://shopconnectt.onrender.com/
