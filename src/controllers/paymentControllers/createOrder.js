@@ -31,7 +31,7 @@ const createOrder=async(req,res)=>{
             external_reference: user.id,
             installments: 1,
             back_urls:{
-                success: 'http://localhost:3001/payment/success',
+                success: 'http://localhost:3000/successfull',
                 failure: 'http://localhost:3001/payment/failure',
                 pending: 'http://localhost:3001/payment/pending',
             },
