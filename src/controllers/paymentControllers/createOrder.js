@@ -30,14 +30,14 @@ const createOrder=async(req,res)=>{
             external_reference: user.id,
             installments: 1,
             back_urls:{
-                success: 'http://localhost:3000/successfull',
-                failure: 'http://localhost:3001/payment/failure',
-                pending: 'http://localhost:3001/payment/pending',
+                success: 'https://shopconnectt.onrender.com/successfull/',
+                failure: 'https://shopconnect-bj22.onrender.com/payment/failure',
+                pending: 'https://shopconnect-bj22.onrender.com/payment/pending',
             },
-            notification_url: 'https://3ab0-2803-9800-9001-c29f-595d-6da0-6a4b-30e9.ngrok-free.app/payment/webhook'
+            notification_url: 'https://shopconnect-bj22.onrender.com/payment/webhook'
         });
 
-    
+            //https://shopconnect-bj22.onrender.com/
         res.send(result.body)
 
     }catch(error){
