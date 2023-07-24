@@ -318,6 +318,7 @@
   ],
   "sneakers": [
     {
+      "idPrice":"price_1NVG0IHHHzRx12HMB5KwXT0Z",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -393,6 +394,7 @@
       "upper_material": "Leather"
     },
     {
+      "idPrice":"price_1NVH42HHHzRx12HMoQiaEhqT",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -446,6 +448,7 @@
       "upper_material": ""
     },
     {
+      "idPrice":"price_1NVH4tHHHzRx12HM2aYeFT1P",
       "box_condition": "no_original_box",
       "brand_name": "Air Jordan",
       "category": [
@@ -519,6 +522,7 @@
       "upper_material": ""
     },
     {
+      "idPrice":"price_1NVH6HHHHzRx12HMxuyJI3tV",
       "box_condition": "no_original_box",
       "brand_name": "Air Jordan",
       "category": [
@@ -590,6 +594,7 @@
       "upper_material": "Patent Leather"
     },
     {
+      "idPrice":"price_1NVH75HHHzRx12HMoSQZEPeu",
       "box_condition": "no_original_box",
       "brand_name": "Air Jordan",
       "category": [
@@ -661,6 +666,7 @@
       "upper_material": ""
     },
     {
+      "idPrice":"price_1NVH7qHHHzRx12HM6ycR4MoC",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -728,6 +734,7 @@
       "upper_material": ""
     },
     {
+      "idPrice":"price_1NVH8VHHHzRx12HM7ql1uTBA",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -801,6 +808,7 @@
       "upper_material": ""
     },
     {
+      "idPrice":"price_1NVHbQHHHzRx12HM9onBsgVd",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -894,6 +902,7 @@
       "upper_material": ""
     },
     {
+      "idPrice":"price_1NVHcBHHHzRx12HM5OnyP5pn",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -967,6 +976,7 @@
       "upper_material": ""
     },
     {
+      "idPrice":"price_1NVHd1HHHzRx12HMz7tCpDjn",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -1030,6 +1040,7 @@
       "upper_material": null
     },
     {
+      "idPrice":"price_1NVHfpHHHzRx12HMKW6Qrrhb",
       "box_condition": "no_original_box",
       "brand_name": "Air Jordan",
       "category": [
@@ -1103,6 +1114,7 @@
       "upper_material": ""
     },
     {
+      "idPrice":"price_1NVHglHHHzRx12HMvo9yNhkm",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -1179,6 +1191,7 @@
       "upper_material": "Leather"
     },
     {
+      "idPrice":"price_1NVLsLHHHzRx12HMDAb2KMjs",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -1248,7 +1261,7 @@
       "story_html": null,
       "upper_material": null
     },
-    {
+    { "idPrice":"price_1NVLt3HHHzRx12HM6ibsdTj3",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -1323,7 +1336,7 @@
       "story_html": "<p>Music artist Travis Scott hails from Houston, where the Oilers used to take the field in red, white and blue uniforms. The Travis Scott x Air Jordan 4 Retro &#39;Cactus Jack&#39; colorway pays tribute to the city’s bygone football team with a Durabuck leather upper dressed in University Blue and a Varsity Red insole. The black lace cage and a heel panel feature a light blue speckle pattern. Cactus Jack branding appears on the left heel in Varsity Red, with a matching Jumpman logo on the right.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVLthHHHzRx12HMb0WOFMhX",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -1397,7 +1410,7 @@
       "story_html": "<p>In 1985, Michael Jordan received the NBA’s Rookie of the Year Award after launching his career with a remarkable point per game average and a thirst for success. To celebrate, Jordan Brand released the Air Jordan 1 Retro High OG &#39;Rookie of the Year.&#39; The high top features a white-based leather upper with perforations on the toe box for breathability and Gold Harvest leather overlays on the mudguard, ankle, eyestay, and heel. Hidden on the inside of each strap on the upper are callouts to MJ’s outstanding rookie season. ‘1984-85 R.O.Y. 2313 POINTS 28.2 PPG’ can be found on the inside of one strap, and a quote from Jordan can be found on the other.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVLudHHHzRx12HMpV09U2WH",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -1495,7 +1508,7 @@
       "story_html": "<p>The Travis Scott x Air Jordan 1 Retro High features a new look on the iconic silhouette, thanks to an oversized backward-facing Swoosh on the lateral side. A traditionally oriented Swoosh graces the medial side of the upper, which is built with a blend of white leather and brown suede. Additional unique details include a double-layer construction on the collar and Scott’s crudely drawn face logo embossed on the heel.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVLvLHHHzRx12HMIcHA5081",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -1566,7 +1579,7 @@
       "story_html": "<p>Amsterdam-based boutique and streetwear brand, Patta joins forces with Jordan Brand to lend their signature aesthetic to the Patta x Air Jordan 7 Retro OG SP &#39;Shimmer&#39; sneaker. Part of a limited-edition capsule collection released in May 2019, this rendition sports an earth-toned color palette of Shimmer, Mahogany Mink, Velvet Brown and Tough Red hues on a premium leather and suede upper. Unique perforation patterns and an offset Jumpman logo accent the underlay, while signature Patta script dresses the triple-tone midsole. A durable rubber outsole equipped with Air technology reinforces the design, which is inspired by Michael Jordan&#39;s run with the Dream Team at the 1992 Summer Games in Barcelona.</p>\n",
       "upper_material": null
     },
-    {
+    { "idPrice":"price_1NVLvuHHHzRx12HMA0f85D7t",
       "box_condition": "badly_damaged",
       "brand_name": "Air Jordan",
       "category": [
@@ -1633,7 +1646,7 @@
       "story_html": "<p>The Air Jordan 1 Retro High OG ‘Turbo Green’ complements the silhouette’s clean lines with a classic two-tone design. A textured white leather base is contrasted by soft suede overlays in Turbo Green. The latter design element is burnished to give off a vintage aesthetic, a quality that’s further enhanced by a midsole finished in off-white Sail. In addition to a woven Nike Air tongue tag in purple and yellow, exterior branding also includes a line of text at the base of the quarter panel that reads ‘SP 19 Air Jordan 1 High OG.’</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVLwZHHHzRx12HMAFiszXpj",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -1699,7 +1712,7 @@
       "story_html": "<p>The Air Jordan 1 Retro High OG ‘Crimson Tint’ showcases a simple two-tone design, executed on an all-leather build that incorporates both tumbled leather and smooth full-grain leather. The latter is used on the toe box, Swoosh, collar and heel panel, all finished in Crimson Tint. The black tumbled leather overlays are matched by black laces and a black nylon tongue, topped with a woven Nike tag.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVLxOHHHzRx12HMUlgj6SxI",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -1761,7 +1774,7 @@
       "story_html": "<p>An original colorway of the Air Jordan 11 Low back in 2001, this low-cut style is revived with the ladies’-exclusive Wmns Air Jordan 11 Retro Low &#39;Pink Snakeskin&#39; sneaker. Released in May 2019, its smooth white leather upper is decorated with glossy snakeskin mudguards. Below, the shoe rides along a foam midsole and translucent outsole.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVLxwHHHzRx12HMR8YNys6N",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -1852,7 +1865,7 @@
       "story_html": null,
       "upper_material": null
     },
-    {
+    { "idPrice":"price_1NVLyaHHHzRx12HM6Uf3cand",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -1927,7 +1940,7 @@
       "story_html": "<p>Arriving in stores in February 2018, the Air Jordan 1 Retro High OG ‘Bred Toe’ is a new spin on a classic design. The Chicago Bulls-inspired colorway combines elements of the ‘Bred’ and ‘Black Toe’ editions of the Air Jordan 1, executed on a premium leather build. The high-top features a black Swoosh on the white quarter panel, along with contrasting pops of red on the toe box, heel, collar, and outsole. The shoe stays true to its OG 1985 roots with Nike Air branding on the tongue tag and sockliner.</p>\n",
       "upper_material": "Leather"
     },
-    {
+    { "idPrice":"price_1NVLzQHHHzRx12HM8caaruq2",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -2004,7 +2017,7 @@
       "story_html": "<p>Air Jordan 1 Retro High OG ‘Origin Story’ was made to celebrate the animated film Spider-Man: Into the Spider-Verse. The high-top features a design that mirrors the pair worn by character Miles Morales, updating the classic Chicago colorway with an icy translucent rubber outsole and a subtle pattern of reflective dots across the shoe’s red leather overlays.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVM0AHHHzRx12HMY47w6kn6",
       "box_condition": "no_original_box",
       "brand_name": "Air Jordan",
       "category": [
@@ -2077,7 +2090,7 @@
       "story_html": "<p>The Air Jordan 12 Retro ‘Gym Red’ presents a monochromatic take on Tinker Hatfield’s 1996 design. The entirety of the mid-top silhouette is dipped in red, including the rubber tooling and herringbone tread outsole. Contrasting hits of black are used throughout the shoe’s branding elements and sockliner. While the all-red finish presents a radical new look for the vintage silhouette, the performance benefits remain unchanged, highlighted by full-length Zoom Air that extends from heel to toe.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVM0oHHHzRx12HM5IQZUEgP",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -2149,7 +2162,7 @@
       "story_html": "<p>The Air Jordan 11 Retro Low&#39;s iconic identity was founded when Michael Jordan returned to the game in 1995. Surfacing in June 2019, this &#39;Light Bone Snakeskin&#39; variant reaffirms the classic&#39;s allure with a contemporary snakeskin print on the leather upper&#39;s mudguard. Rope laces winding through the lateral webbing customize fit. Signature Jumpman insignias are positioned on the tongue and heel. A translucent rubber outsole and carbon fiber plate form the base.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVM2hHHHzRx12HM5SiruHCh",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -2199,7 +2212,7 @@
       "release_date": "2019-05-25T07:00:00.000Z",
       "release_date_unix": 1558767600,
       "release_year": 2019,
-      "retail_price_cents": null,
+      "retail_price_cents": 16000 ,
       "shoe_condition": "new_no_defects",
       "silhouette": "Air Jordan 1",
       "size_range": [
@@ -2240,7 +2253,7 @@
       "story_html": "<p>The Air Jordan SB 1 Retro High is representative of the decades-old influence that the iconic shoe has had on skate culture. Revealed in May 2019, this &#39;Light Bone&#39; update is formed by a classic leather upper treated with a wear-away finish concealing an alternate tint. Custom branding resurfaces via the lateral Swooshes, Jumpman tongue label and Wings logo. The encapsulated Air unit and concentric circle outsole are mainstays on this classic silhouette.</p>\n",
       "upper_material": null
     },
-    {
+    { "idPrice":"price_1NVM3DHHHzRx12HM8ikBpAt9",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -2313,7 +2326,7 @@
       "story_html": "<p>Instead of the usual two-tone color blocking, the Air Jordan 1 Retro High OG ‘Phantom’ makes use of contrast stitching in black and red to distinguish the high-top’s clean lines. The shoe’s all-leather upper is finished in off-white Sail, accented by a padded collar and underlayer Swoosh in University Red. True to its OG designation, the design is finished with Nike Air branding on the woven tongue tag and insole.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVM3qHHHzRx12HMlJ0LT65v",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -2383,7 +2396,7 @@
       "story_html": null,
       "upper_material": null
     },
-    {
+    { "idPrice":"price_1NVM4SHHHzRx12HMr9ss2qCX",
       "box_condition": "no_original_box",
       "brand_name": "Air Jordan",
       "category": [
@@ -2455,7 +2468,7 @@
       "story_html": "<p>The Air Jordan 11 Retro ‘Platinum Tint’ does away with the one detail most commonly associated with the classic silhouette—its shiny patent leather overlay. Instead, the mid-top takes on a nubuck and ballistic mesh build, finished entirely in understated Platinum Tint. Contrasting color arrives via University Red detailing on the tongue and Jumpman on the lateral heel.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVM4pHHHzRx12HMnDGyujuQ",
       "box_condition": "no_original_box",
       "brand_name": "Air Jordan",
       "category": [
@@ -2530,7 +2543,7 @@
       "story_html": "<p>The 2018 edition of the Air Jordan 11 Retro ‘Concord’ features ‘45’ stamped on the black heel tab—a nod to the jersey number that Michael Jordan wore upon his return to basketball following his first retirement. The rest of the build keeps the shoe’s signature details intact, including a white ballistic mesh upper, black patent leather overlays and an icy translucent outsole underfoot. </p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVM5jHHHzRx12HMVEhZKXg8",
       "box_condition": "good_condition",
       "brand_name": "Air Jordan",
       "category": [
@@ -2596,7 +2609,7 @@
       "story_html": "<p>The Air Jordan 11 Retro Low ‘Navy Snakeskin’ returns for the first time since 2000. A true retro to the original, the 2019 version features leather panels on the upper instead of mesh and a translucent outsole, while the mudguard still features a navy snakeskin print.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVM6DHHHzRx12HMZsBF32NV",
       "box_condition": "no_original_box",
       "brand_name": "Air Jordan",
       "category": [
@@ -2671,7 +2684,7 @@
       "story_html": "<p>The Air Jordan 4 Retro OG &#39;Cement’ 2016 was one of the original four colorways released in 1989. The sneaker features the original White, Fire Red, Black, and Tech Grey colorway, with the speckled Cement Grey accents that give the sneaker its nickname. Released during the 2016 NBA All-Star weekend in Toronto, the sneaker was also retro’d in 1999 and 2012. The 1999 and 2016 retros are the only models that feature the ‘Nike Air’ branding on the heel, just like the 1989 OG sneakers.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVM6nHHHzRx12HM8F3McByX",
       "box_condition": "good_condition",
       "brand_name": "Champion",
       "category": [
@@ -2740,7 +2753,7 @@
       "story_html": "<p>The Champion Rally Pro sneaker packages street style in a sleek, basketball-inspired silhouette with heritage Champion detailing throughout. This ‘Black’ version is styled for growing kids’ feet and features a one-piece bootie construction made from woven mesh and elastic textile with suede trim on the sidewall and heel. It offers a snug, sock-like fit that’s reinforced with tabs at the tongue and heel for easy on and off. A textured chenille ‘C’ logo on the sidewall and branded elastic strap across the forefoot complement the design.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVM7HHHHzRx12HMk9lzZex5",
       "box_condition": "good_condition",
       "brand_name": "Converse",
       "category": [
@@ -2805,7 +2818,7 @@
       "story_html": "<p>Tyler, the Creator teamed up with Foot Locker on the ‘Artist Series’ edition of the Converse Chuck 70, featuring an off-white canvas upper printed with original artwork from Wyatt Navarro. The heightened foxing that’s a signature design element of the silhouette is adorned with contrasting stripes in blue and orange. A gum rubber outsole delivers traction underfoot.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVM7oHHHzRx12HMhi69Crc3",
       "box_condition": "no_original_box",
       "brand_name": "Converse",
       "category": [
@@ -2873,7 +2886,7 @@
       "story_html": "<p>This Comme des Garçons x Chuck Taylor All Star Hi features an off-white canvas upper, red CDG heart logo on the side panels, black contrast stripe on the heel, white toe cap, and a vulcanized rubber midsole. Released in June 2017, the sneaker also dropped in a black colorway.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVM8VHHHzRx12HMXOyMB9F5",
       "box_condition": "good_condition",
       "brand_name": "Gucci",
       "category": [
@@ -2941,7 +2954,7 @@
       "story_html": "<p>The Gucci Pursuit ‘72 Rubber Slide in ‘Black’ sneaker pays homage to the fashion house&#39;s roots with the iconic Web stripe—first developed by Gucci in the 1950s—taking the stage. The minimal, open-toe silhouette features a thick black rubber sole with a rounded shape. The top portion of the slide is a rubber strap displaying the Gucci Web green and red striped motif, and the design is finished with a Gucci logo embossed on the outer midsole.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVM9CHHHzRx12HMPQAGRLfj",
       "box_condition": "good_condition",
       "brand_name": "Nike",
       "category": [
@@ -3012,7 +3025,7 @@
       "story_html": null,
       "upper_material": null
     },
-    {
+    { "idPrice":"price_1NVM9fHHHzRx12HMHIeYCbgv",
       "box_condition": "no_original_box",
       "brand_name": "Nike",
       "category": [
@@ -3082,7 +3095,7 @@
       "story_html": "<p>In celebration of Air Max Day, Nike hosted the Nike: On Air contest in 2018, giving residents the chance to create their own Air Max designs inspired by their hometowns. After working alongside Nike developers, winner Gwang Shin debuted his Nike Air Max 97 &#39;Neon Seoul&#39; sneaker in April 2019. Paying tribute to his city, Seoul, Shin draws influences from the famed neon signs in South Korea’s capital, decorating the leather upper with vivid-colored piping.</p>\n",
       "upper_material": null
     },
-    {
+    { "idPrice":"price_1NVMA6HHHzRx12HMPEOjDc50",
       "box_condition": "good_condition",
       "brand_name": "Nike",
       "category": [
@@ -3158,7 +3171,7 @@
       "story_html": "<p>Nike and frequent collaborator Fear Of God designer, Jerry Lorenzo, joined forces once again for the Air Fear Of God Raid &#39;Black&#39; sneaker. Released in May 2019, the uniquely designed silhouette is inspired by one of Lorenzo’s favorite Nike designs, the Air Raid. Outfitted with a cross strap suede and textile upper above; below, its equipped with a double stacked Zoom Air unit in heel for a retro, yet futuristic finish.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMAcHHHzRx12HMCXsNtZmy",
       "box_condition": "good_condition",
       "brand_name": "Nike",
       "category": [
@@ -3233,7 +3246,7 @@
       "story_html": "<p>The Off-White x Air Max 90 ‘Black’ offers a unique blend of materials on the upper, which combines a ripstop base with nubuck overlays and a suede mudguard. The all-black finish is contrasted by a white Swoosh with zigzag stitching, a small orange tab on the quarter panel and orange stitching on the exposed-foam tongue. Virgil Abloh’s signature text block makes an appearance on the shoe’s medial side.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMB0HHHzRx12HMfqgL3EM5",
       "box_condition": "no_original_box",
       "brand_name": "Nike",
       "category": [
@@ -3308,7 +3321,7 @@
       "story_html": "<p>This monochromatic take on the Air Presto is the second time Virgil Abloh and Nike collaborated on this iconic silhouette. The July 2018 iteration came a few mere months after it’s two-tone predecessor made it’s debut as part of Abloh and Nike’s ‘The Ten’ Collection. This pair showcases an all-black finish, accented with unique touches including a plastic zip tie, white Swoosh with conspicuous zig-zag stitching, and lines of text on the medial quarter panel that allude to the shoe’s Beaverton origins.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMBSHHHzRx12HMArzviYm6",
       "box_condition": "no_original_box",
       "brand_name": "Nike",
       "category": [
@@ -3401,7 +3414,7 @@
       "story_html": "<p>Sacai and Nike collaborate again, with the Nike LDV Waffle emerging from Paris Fashion Week at the Sacai SP19 runway show. Featuring a unique hybridization technique, the shoe mixes two Nike runners from the archives: the Waffle Daybreak and the LDV. With two shoes coming together, a unique upper features a double Swoosh, double tongue, double heel counter, double eyestay and double laces. It’s set against a blue and red upper that mixes suede, leather and mesh while a sculpted midsole juts out past the heel, adding an extra element of crazy design lines on an already chaotic shoe. The classic waffle outsole brings everything together, while Nike and Sacai branding can be seen on the back heel and insole.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMC1HHHzRx12HM4QDSmgZd",
       "box_condition": "missing_lid",
       "brand_name": "Nike",
       "category": [
@@ -3471,7 +3484,7 @@
       "story_html": null,
       "upper_material": null
     },
-    {
+    { "idPrice":"price_1NVMCPHHHzRx12HMwkJDIP2Y",
       "box_condition": "good_condition",
       "brand_name": "Nike",
       "category": [
@@ -3545,7 +3558,7 @@
       "story_html": "<p>First spotted on the feet of atmos creative director Hirofumi Kojima during ComplexCon 2018, the atmos x Air Max 2 Light &#39;Logos&#39; releases as part of Air Max Day 2019. The upper showcases a patchwork design made up of different mismatched panels inspired by vintage Nike graphics, with a translucent overlay and Bright Crimson Swoosh. Other details include a sculpted white midsole housing a heel Max Air unit, and the tongue features a sewn on colorful AIR MAX 2 patch.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMCqHHHzRx12HM4mw00mvN",
       "box_condition": "badly_damaged",
       "brand_name": "Nike",
       "category": [
@@ -3613,7 +3626,7 @@
       "story_html": null,
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMDKHHHzRx12HMCQzWrhIQ",
       "box_condition": "missing_lid",
       "brand_name": "Nike",
       "category": [
@@ -3690,7 +3703,7 @@
       "story_html": "<p>The Nike Air Max 90 QS &#39;Mars Landing&#39; sneaker was released in March 2019 as an homage to the rover landing expedition on Mars. Fusing elements of the 1990 classic with official imagery of the Red Planet, the shoe swaps traditional stitching for a seamless finish, molded to imitate the original’s overlay design. A Mars Rover wheel inspired graphic highlights the outsole, which sits below a starry space inspired midsole. The Magma Orange was matched as close as possible to actual surface photos of Mars, while reflective 3M hits on the tongue and back tab provide contrast. </p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMDmHHHzRx12HMfD73lbzg",
       "box_condition": "good_condition",
       "brand_name": "Nike",
       "category": [
@@ -3768,7 +3781,7 @@
       "story_html": "<p>The Off-White x Air Max 90 ‘Desert Ore’ represents yet another of Virgil Abloh’s fanciful takes on the retro silhouette. Unlike its stark black and white counterparts, this pair features a mixed-material upper dressed in a warm tan shade. A stitched-on in Swoosh in Bright Mango is joined by the usual Virgil flourishes, including a blue zip tie and lines of printed text on the medial side.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMEGHHHzRx12HMx2ycbrkV",
       "box_condition": "good_condition",
       "brand_name": "Nike",
       "category": [
@@ -3846,7 +3859,7 @@
       "story_html": "<p>The April 2018 version of Virgil Abloh’s all-white Air VaporMax is mostly unchanged from the original pair from ‘The Ten.’ Stripped of color, the performance runner brings raw materials and unique details to the forefront, including an exposed-foam tongue, translucent Swoosh and off-white suede eyestay. Printed above the clear VaporMax unit, the quotation ‘AIR’ print on the lateral side takes on an extra meta dimension. </p>\n",
       "upper_material": "Flyknit"
     },
-    {
+    { "idPrice":"price_1NVMEeHHHzRx12HMWszdT5pO",
       "box_condition": "good_condition",
       "brand_name": "Nike",
       "category": [
@@ -3921,7 +3934,7 @@
       "story_html": "<p>The ‘Sail’ colorway of Travis Scott’s Air Force 1 represents the Houston rapper’s second collaboration with Nike on the classic silhouette. Aside from swapping out the all-white finish of its predecessor with slightly darker Sail, the new model is mostly unchanged. Tonal canvas construction is accented with removable Swooshes and tongue patches, while the shiny lace jewels give a nod to Scott’s signature grill.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMF7HHHzRx12HMx4rbsYue",
       "box_condition": "good_condition",
       "brand_name": "Nike",
       "category": [
@@ -4012,7 +4025,7 @@
       "story_html": null,
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMFSHHHzRx12HMSKI7NU5W",
       "box_condition": "good_condition",
       "brand_name": "Nike",
       "category": [
@@ -4083,7 +4096,7 @@
       "story_html": null,
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMFvHHHzRx12HM5NWzQKO8",
       "box_condition": "no_original_box",
       "brand_name": "Nike",
       "category": [
@@ -4151,7 +4164,7 @@
       "story_html": null,
       "upper_material": null
     },
-    {
+    { "idPrice":"price_1NVMGJHHHzRx12HMXSeXs2jv",
       "box_condition": "no_original_box",
       "brand_name": "Nike",
       "category": [
@@ -4231,7 +4244,7 @@
       "story_html": "<p>The Nike Air Force 1 Low is a modern take on the iconic white on white low top Air Force 1. Released in honor of the classic shoe&#39;s 25th anniversary in 2007, the sneaker features an upgraded, crispier 10A full grain leather white upper with a matching white Air-cushioned rubber sole.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMHMHHHzRx12HMloFeVXv3",
       "box_condition": "good_condition",
       "brand_name": "Nike",
       "category": [
@@ -4303,7 +4316,7 @@
       "story_html": null,
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMHmHHHzRx12HM1lsVz6RP",
       "box_condition": "good_condition",
       "brand_name": "Nike",
       "category": [
@@ -4402,7 +4415,7 @@
       "story_html": "<p>Created by acclaimed streetwear designer Jerry Lorenzo for release in April 2019, the Air Fear of God Raid &#39;Light Bone&#39; draws inspiration from Lorenzo&#39;s favorite silhouette, the Air Raid outdoor basketball shoe first introduced in 1992. Incorporating the same distinct cross straps into the Light Bone upper, a contrasting black Swoosh stands out along with the visible double-stacked Zoom Air units. Modern design lines combine with premium comfort to define this lifestyle shoe.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMIAHHHzRx12HMUPjuKYPB",
       "box_condition": "good_condition",
       "brand_name": "Nike",
       "category": [
@@ -4479,7 +4492,7 @@
       "story_html": "<p>From streetwear fashion designer Jerry Lorenzo comes the Air Fear of God Moc &#39;Pure Platinum,&#39; released on April 27th, 2019, as part of the second wave of his collaboration with Nike. With a Pure Platinum upper over a Sail midsole and outsole, this lifestyle Moc gets its bounce from stacked visible Zoom Air units in the heel. A toggle drawstring in back allows for on-the-spot adjustments to its streamlined textile upper, which features a forefoot strap for lockdown and a snap button on the side for easy on/off.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMIcHHHzRx12HMs0KusxTo",
       "box_condition": "good_condition",
       "brand_name": "Nike",
       "category": [
@@ -4569,7 +4582,7 @@
       "story_html": "<p>In honor of Air Max Day 2019, Nike collaborated with designer Cynthia Lu for an avant-garde take on the VaporMax, which resulted in the Cactus Plant Flea Market x Air VaporMax 2019 sneaker. Released May 2019, the deconstructed design features an exposed-seam mesh upper, underscored by a cord Swoosh and a smiley face at heel, a nod to Nike’s ‘Just Do It’ campaign. Below, the design is padded with its trademark full-length VaporMax bag, completed in a multi-color finish.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMJAHHHzRx12HMSIIXDS1V",
       "box_condition": "good_condition",
       "brand_name": "Nike",
       "category": [
@@ -4637,7 +4650,7 @@
       "story_html": "<p>The Nike Air Max 97 &#39;Triple White&#39; features a white leather and mesh upper with Wolf Grey accents. Released in August of 2017, the sneaker also includes a full-length white Air Max unit. </p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMJbHHHzRx12HMG7cBHx1m",
       "box_condition": "no_original_box",
       "brand_name": "Nike",
       "category": [
@@ -4707,7 +4720,7 @@
       "story_html": "<p>Released in March 2018, the the Air Max 270 &#39;White&#39; takes inspiration from both the Air Max 180 and Air Max 93. The white mesh upper offers a matching asymmetrical lacing unit, accented by gray hits on the heel pull tab and Swoosh logos on the toe box and side panel. Other details include &#39;Air 270&#39; branding on the tongue, heel and pull tab. A white rubber outsole in the forefront and transparent Air Max sole unit on the heel round out the minimal aesthetic.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMJzHHHzRx12HM4NDN6ZWe",
       "box_condition": "good_condition",
       "brand_name": "Vans",
       "category": [
@@ -4774,7 +4787,7 @@
       "story_html": "<p>The Vans Old Skool ‘Yacht Club’ showcases bold color blocking inspired by traditional nautical flags. The shoe’s upper is executed with canvas quarter panels in kelly green, overlaid with a white leather side stripe, and contrasted by a blue suede toe cap and yellow suede heel panel. The multi-color design rests on a crisp white rubber midsole, accented with Vans’ signature ‘Off the Wall’ license plate in red.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMKRHHHzRx12HMxnhr2uGQ",
       "box_condition": "no_original_box",
       "brand_name": "adidas",
       "category": [
@@ -4848,7 +4861,7 @@
       "story_html": "<p>The adidas Yeezy Boost 350 V2 lives up to its cult appeal through evolved design elements and advanced technology. Released June 2019, this ‘Black Non-Reflective&#39; edition&#39;s re-engineered Primeknit bootie sees futuristic updates including a translucent side stripe and bold stitching on the heel pull. Integrated lacing customizes the fit while a translucent black Boost-equipped midsole complements the covert feel.</p>\n",
       "upper_material": "Primeknit"
     },
-    {
+    { "idPrice":"price_1NVML5HHHzRx12HMnM9iNw5s",
       "box_condition": "no_original_box",
       "brand_name": "adidas",
       "category": [
@@ -4922,7 +4935,7 @@
       "story_html": null,
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMLdHHHzRx12HMjFkczizW",
       "box_condition": "no_original_box",
       "brand_name": "adidas",
       "category": [
@@ -5001,7 +5014,7 @@
       "story_html": "<p>The 5th Yeezy to drop since November 2017 — Yeezy Boost 350 V2 &#39;Semi Frozen Yellow&#39; and ‘Beluga 2.0,’ Yeezy Powerphase Calabasas, and the Yeezy 500 ‘Desert Rat’ — the Yeezy Boost 350 V2 &#39;Blue Tint&#39; was dropped on December 16th, 2017. The sneaker features a neutral white and grey upper with a red ‘SPLY-350’ text on the side in reverse. The shoe also comes with a heel tab, blue tint inner lining, and paste blue laces.</p>\n",
       "upper_material": "Primeknit"
     },
-    {
+    { "idPrice":"price_1NVMM2HHHzRx12HMNuoalAVu",
       "box_condition": "good_condition",
       "brand_name": "adidas",
       "category": [
@@ -5069,7 +5082,7 @@
       "story_html": null,
       "upper_material": null
     },
-    {
+    { "idPrice":"price_1NVMMYHHHzRx12HM0RoI2Y8g",
       "box_condition": "good_condition",
       "brand_name": "adidas",
       "category": [
@@ -5169,7 +5182,7 @@
       "story_html": "<p>Music and fashion icon Kanye West debuted the Yeezy Boost 700 at his Yeezy Season 5 fashion show in February 2017. This &#39;Analog&#39; colorway released April 2019, and provides a monochromatic look to the acclaimed shoe. Dressed in shades of off white, the upper features a variety of panels constructed of leather, mesh, suede with a small hit of reflective material near the heel. Full-length Boost cushioning is embedded in the signature chunky midsole while a black rubber outsole provides contrast.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMMsHHHzRx12HMrjLcCLQu",
       "box_condition": "no_original_box",
       "brand_name": "adidas",
       "category": [
@@ -5264,7 +5277,7 @@
       "story_html": "<p>Regarded as a cultural phenomenon, the adidas Yeezy Boost 350 silhouette generated a cult following when it was initially released in 2015. This ‘Glow’ makeover—released in May 2019—equips the Primeknit upper with a high-visibility treatment and a translucent stripe to the lateral profile. Integrated lacing and a coordinating heel pull provide easy on/off. Underfoot, the signature full-length Boost midsole looks to the future with a bright glow in the dark finish.</p>\n",
       "upper_material": "Primeknit"
     },
-    {
+    { "idPrice":"price_1NVMNfHHHzRx12HME40s9H5b",
       "box_condition": "good_condition",
       "brand_name": "adidas",
       "category": [
@@ -5341,7 +5354,7 @@
       "story_html": "<p>With its name coming from the colorway similarities found on the first Yeezy Boost 350 V2, the Yeezy Boost 350 V2 &#39;Beluga 2.0&#39; dropped on November 25, 2017. It was quickly restocked on November 30th after selling out. The shoe features a muted grey stripe on the laterals instead of the bright orange stripe found on the original ‘Beluga’ sneaker. The Yeezy Boost 350 V2 &#39;Beluga 2.0&#39; also features a heel pull tab with orange stitching and orange ‘SPLY-350’ lettering in reverse on the laterals. </p>\n",
       "upper_material": "Primeknit"
     },
-    {
+    { "idPrice":"price_1NVMO5HHHzRx12HMAheDE1cz",
       "box_condition": "good_condition",
       "brand_name": "adidas",
       "category": [
@@ -5419,7 +5432,7 @@
       "story_html": "<p>The adidas Yeezy Boost 700 ‘Inertia’ is part of the Yeezy Season 8 lineup that launched March 2019. The ‘Inertia’ colorway showcases the original 700 upper, with a heavily paneled construction made with premium suede, mesh and smooth leather sections. Cast primarily in cool grey tones, the sneaker includes hits of Tangerine for contrast. The shoe’s signature chunky midsole is equipped with full-length Boost cushioning for responsive comfort.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMOWHHHzRx12HM1qoQrmR8",
       "box_condition": "no_original_box",
       "brand_name": "adidas",
       "category": [
@@ -5495,7 +5508,7 @@
       "story_html": "<p>The Yeezy Boost 350 V2 ‘Sesame’ features a refined color palette that complements the shoe’s minimalist build. The breathable Primeknit upper keeps the heel tab and distinct center stitch detailing but loses the mirrored ‘SPLY-350’ branding. Underneath, a semi-translucent rubber midsole houses a full-length Boost cushioning, while a gum rubber outsole delivers enhanced traction.</p>\n",
       "upper_material": "Primeknit"
     },
-    {
+    { "idPrice":"price_1NVMOtHHHzRx12HM4ddpVdmU",
       "box_condition": "badly_damaged",
       "brand_name": "adidas",
       "category": [
@@ -5578,7 +5591,7 @@
       "story_html": "<p>This inaugural colorway of Kanye West’s Yeezy Wave Runner 700 launched in November 2017, following a public debut earlier in the year as part of the Yeezy Season 5 runway show. The sneaker’s retro-inspired lines worked in tandem with a chunky silhouette reminiscent of an earlier era. A mesh base is finished in grey on the quarter panels and bright blue and teal on the forefoot. Suede overlays arrive on the toe and heel accented grey leather eyestays. Other details include neon green laces, a bulky white midsole, and pops of black and bright orange.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMPZHHHzRx12HMygkh50Hp",
       "box_condition": "good_condition",
       "brand_name": "adidas",
       "category": [
@@ -5658,7 +5671,7 @@
       "story_html": "<p>The Yeezy Boost 350 V2 ‘Static Non-Reflective’ is designed to stand out, thanks to the addition of never-before-seen features. They include a translucent side stripe and 3M reflective detailing on the shoe’s rope laces, Primeknit upper and Three-Stripes branding on the interior heel. The midsole makes use of ridged TPU sidewalls with semi-translucent properties, revealing full-length adidas Boost cushioning within.</p>\n",
       "upper_material": "Primeknit"
     },
-    {
+    { "idPrice":"price_1NVMPxHHHzRx12HMn6y7idEi",
       "box_condition": "badly_damaged",
       "brand_name": "adidas",
       "category": [
@@ -5734,7 +5747,7 @@
       "story_html": "<p>Alongside an accompanying Crazy BYW, the Pharrell x Solar Hu Glide ST ‘Chinese New Year’ rings in the Year of the Pig as part of a collaborative CNY Pack. The lifestyle runner features a red and black knitted upper with gold accents and special embroidery on the toe of each shoe: ‘Hu’ on the right and the Chinese ‘Fu’ symbol on the left. It all sits on a full-length Boost midsole in classic white.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMQXHHHzRx12HMhF7oJFkR",
       "box_condition": "good_condition",
       "brand_name": "adidas",
       "category": [
@@ -5829,7 +5842,7 @@
       "story_html": "<p>The adidas Yeezy Boost 350 V2 ‘Clay’ updates the silhouette with a warm palette and semi-translucent, three-tone vent at the side. This ‘Clay’ colorway retains the stand-out features of the original 350 V2 shoe, first seen in September 2016, including a flexible Primeknit upper and full-length Boost cushioning. This shoe released March 2019 exclusively in select cities in North America and Latin America.</p>\n",
       "upper_material": "Primeknit"
     },
-    {
+    { "idPrice":"price_1NVMR5HHHzRx12HMVSCHFKYf",
       "box_condition": "no_original_box",
       "brand_name": "adidas",
       "category": [
@@ -5915,7 +5928,7 @@
       "story_html": "<p>First released on April 29, 2017, the Yeezy Boost 350 V2 ‘Cream White’ combines a cream Primeknit upper with tonal cream SPLY 350 branding, and a translucent white midsole housing full-length Boost. Released again in October 2018, this retro helped fulfill Kanye West’s oft-repeated ‘YEEZYs for everyone’ Twitter mantra, as adidas organized the biggest drop in Yeezy history by promising pre-sale to anyone who signed up on the website. Similar to the first release, the ‘Triple White’ 2018 model features a Primeknit upper, a Boost midsole and custom adidas and Yeezy co-branding on the insole.</p>\n",
       "upper_material": "Primeknit"
     },
-    {
+    { "idPrice":"price_1NVMRwHHHzRx12HMgb5Q0vTr",
       "box_condition": "good_condition",
       "brand_name": "adidas",
       "category": [
@@ -5992,7 +6005,7 @@
       "story_html": "<p>The Yeezy Boost 700 ‘Salt’ follows a design trail originally blazed by the Yeezy 500 in November 2018. Like its predecessor, the lifestyle silhouette features a monochromatic light grey finish on a mesh base with tonal overlays in suede and leather. A sculpted midsole in matching grey, concealing full-length Boost cushioning within, features a subtle black accent, matched by the rubber outsole underfoot.</p>\n",
       "upper_material": ""
     },
-    {
+    { "idPrice":"price_1NVMSSHHHzRx12HMQzsWIDMy",
       "box_condition": "badly_damaged",
       "brand_name": "adidas",
       "category": [
@@ -6069,7 +6082,7 @@
       "story_html": "<p>Released on February 25, 2017, the Yeezy Boost 350 V2 ‘Zebra’ combines a white/core black Primeknit upper with red SPLY 350 branding and a translucent white midsole housing full-length Boost. Sold exclusively at adidas.com, Yeezy Supply, and select adidas flagship stores, the ‘Zebra’ sold out instantly but was restocked on June 24th, 2017. Another restock of the ‘Zebra’ arrived November 16, 2018, with more pairs hitting the marketplace and delivering on Kanye’s promise of Yeezy’s being more accessible to anyone that wanted them.</p>\n",
       "upper_material": "Primeknit"
     },
-    {
+    {  "idPrice":"price_1NVMTaHHHzRx12HMPveiKCAI",
       "box_condition": "good_condition",
       "brand_name": "adidas",
       "category": [
@@ -6139,7 +6152,7 @@
       "story_html": null,
       "upper_material": null
     },
-    {
+    {  "idPrice":"price_1NVMU9HHHzRx12HM674EMv0p",
       "box_condition": "good_condition",
       "brand_name": "adidas",
       "category": [
@@ -6219,7 +6232,7 @@
       "story_html": "<p>Kanye West and adidas continued their partnership with the Yeezy Boost 350 V2 ‘Butter,’ which hit stores in June 2018. The minimalist silhouette features distinct center stitching on a reverse Primeknit upper, with the signature ‘SPLY-350’ inscription now printed on the interior side. The heel tab remains, finished in a bright yellow hue that matches the knitted upper, rope laces, and Boost-infused midsole.</p>\n",
       "upper_material": "Primeknit"
     },
-    {
+    {  "idPrice":"price_1NVMUZHHHzRx12HMCtwoQL2W",
       "box_condition": "good_condition",
       "brand_name": "adidas",
       "category": [
@@ -6298,6 +6311,7 @@
       "upper_material": "Primeknit"
     },
     {
+      "idPrice":"price_1NVMV8HHHzRx12HMzbtxLSCU",
       "box_condition": "good_condition",
       "brand_name": "adidas",
       "category": [
@@ -6371,4 +6385,5 @@
       "upper_material": ""
     }
   ]
+
 }

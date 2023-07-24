@@ -10,6 +10,7 @@ conn.sync({ force: true })
 
 		const productData = response.data.map(product => {
 			return {
+                idPrice: product.idPrice,
 				name: product.name,
                 brand_name: product.brand_name,
                 category: product.category,

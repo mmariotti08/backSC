@@ -11,6 +11,9 @@ module.exports = (sequelize) => {
 			type: DataTypes.STRING,
 			unique: true
 		},
+		idPrice: {
+			type: DataTypes.TEXT,
+		},
 		brand_name: {
 			type: DataTypes.STRING,
 			

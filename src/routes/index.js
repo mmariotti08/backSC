@@ -4,7 +4,7 @@ const stocksRoutes = require('./stocksRoutes');
 const fillRoutes = require('./fillRoutes')
 const userRoutes=require('./userRoutes')
 const orderRoutes=require('./orderRoutes')
-
+const paymentsRoutes = require('./paymentsRoutes')
 
 const router = Router();
 
@@ -17,5 +17,7 @@ router.use('/stocks', stocksRoutes);
 router.use('/user', userRoutes)
 
 router.use('/order', orderRoutes)
+
+router.use('/payments', paymentsRoutes)
 
 module.exports = router;
