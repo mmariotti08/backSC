@@ -14,7 +14,6 @@ const getUsersControllers=async(req,res)=>{
 
     }
     
-
 }
 
 

@@ -9,7 +9,7 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       size: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
       },
     },
@@ -21,7 +21,7 @@ module.exports = (sequelize) => {
           fields: ["productId", "orderId", "size"],
         },
       },
-      timestamps: true,
+      timestamps: false,
     }
   );
 };

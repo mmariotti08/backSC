@@ -1,7 +1,9 @@
 const { getStocksHandlers } = require("../../handlers/stocksHandlers/getStocksHandlers");
+const {updateStockHandlers}=require('../../handlers/stocksHandlers/updateStockHandlers')
 
 const getStocksControllers = async (req, res) => {
     try {
+        await updateStockHandlers()
         const stocks = await getStocksHandlers();
 
         return stocks.length > 0
