@@ -23,11 +23,14 @@ const login = async (req, res) => {
             last_name: user.last_name,
             phone: user.phone,
             address: user.address,
+            picture: user.picture,
             active: user.active,
             administrator: user.administrator
         }, JWT_SECRET);
 
-        res.status(200).json({ isAuthenticated: true, token: jwtToken });
+        const decodedToken = jwt.verify(jwtToken, JWT_SECRET);
+
+        res.status(200).json({ isAuthenticated: true, user: decodedToken });
     } catch (error) {
         return res.status(500).json({ error: error.message });
     };

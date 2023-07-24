@@ -6,7 +6,6 @@
         "shipping_address": "Calle Principal 123",
         "delivery_date": "2023-07-19",
         "total_amount": 50299,
-        "userId": 12345,
         "products": [
             {
                 "productID": 1,
@@ -26,7 +25,6 @@
         "shipping_address": "Avenida Secundaria 456",
         "delivery_date": "2023-07-20",
         "total_amount": 25550,
-        "userId": 54321,
         "products": [
             {
                 "productID": 3,
@@ -46,7 +44,6 @@
         "shipping_address": "Plaza Central 789",
         "delivery_date": "2023-07-21",
         "total_amount": 80000,
-        "userId": 98765,
         "products": [
             {
                 "productID": 5,
@@ -66,7 +63,6 @@
         "shipping_address": "Avenida Deportiva 10",
         "delivery_date": "2023-07-22",
         "total_amount": 99999,
-        "userId": 24680,
         "products": [
             {
                 "productID": 7,
@@ -86,7 +82,6 @@
         "shipping_address": "Calle Tecnológica 555",
         "delivery_date": "2023-07-23",
         "total_amount": 199000,
-        "userId": 13579,
         "products": [
             {
                 "productID": 9,
@@ -106,7 +101,6 @@
         "shipping_address": "Avenida del Juego 777",
         "delivery_date": "2023-07-24",
         "total_amount": 35550,
-        "userId": 86420,
         "products": [
             {
                 "productID": 11,
@@ -126,7 +120,6 @@
         "shipping_address": "Calle Residencial 321",
         "delivery_date": "2023-07-25",
         "total_amount": 75000,
-        "userId": 97531,
         "products": [
             {
                 "productID": 13,
@@ -146,7 +139,6 @@
         "shipping_address": "Avenida Cultural 987",
         "delivery_date": "2023-07-26",
         "total_amount": 20000,
-        "userId": 73294,
         "products": [
             {
                 "productID": 15,
@@ -166,7 +158,6 @@
         "shipping_address": "Calle Belleza 456",
         "delivery_date": "2023-07-27",
         "total_amount": 45999,
-        "userId": 51975,
         "products": [
             {
                 "productID": 17,
@@ -186,7 +177,6 @@
         "shipping_address": "Avenida Elegancia 789",
         "delivery_date": "2023-07-28",
         "total_amount": 150000,
-        "userId": 26743,
         "products": [
             {
                 "productID": 19,
