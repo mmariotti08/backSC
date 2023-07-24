@@ -16,7 +16,7 @@ const receiveWebHookControllers = async (req, res) => {
       res.status(500).json({ error: error.message });
     }
 } 
-module.exports = { receiveWebHookControllers }.\ngrok.exe http 3001
+module.exports = { receiveWebHookControllers }//.\ngrok.exe http 3001
 
 //        este codigo comentado es el viejo el nuevo quedo modularizado una parte aca y otra parte al controllers
 //       en caso de emergencia desbloquear este codigo y eliminar handlers/paymentHandlres/receiveWebhoo...
