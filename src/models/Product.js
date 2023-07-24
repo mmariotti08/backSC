@@ -28,7 +28,7 @@ module.exports = (sequelize) => {
 			
 		},
 		main_picture_url: {
-			type: DataTypes.STRING,
+			type: DataTypes.ARRAY(DataTypes.STRING),
 			
 		},
 		retail_price_cents: {
