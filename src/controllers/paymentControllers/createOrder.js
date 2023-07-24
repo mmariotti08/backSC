@@ -31,12 +31,11 @@ const createOrder=async(req,res)=>{
             external_reference: user.id,
             installments: 1,
             back_urls:{
-                success: 'http://localhost:3001/payment/success',
+                success: 'http://localhost:3001/payment/success', //http://localhost:3001/payment/success
                 failure: 'http://localhost:3001/payment/failure',
                 pending: 'http://localhost:3001/payment/pending',
             },
-            notification_url: 'https://0262-152-168-219-181.ngrok-free.app/payment/webhook'
-            
+            notification_url: 'https://382b-2803-9800-9001-c29f-886e-5ad6-d3fa-a7e.ngrok-free.app/payment/webhook'
         });
 
         //https://shopconnectt.onrender.com/
