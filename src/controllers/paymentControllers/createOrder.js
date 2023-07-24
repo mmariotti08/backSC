@@ -23,7 +23,6 @@ const createOrder=async(req,res)=>{
             category_id: element.size
         })): [];
 
-        //<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></meta>
 
 
         const result= await mercadopago.preferences.create({

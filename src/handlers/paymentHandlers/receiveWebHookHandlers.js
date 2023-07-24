@@ -20,7 +20,6 @@ const receiveWebHookHandlers = async (payment) => {
           quantity: element.quantity
         }))
       };
-      console
 
       const { userId, payment_method, total_amount, description, products, delivery_date, status } = cleanData;
 
