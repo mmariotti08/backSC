@@ -9,10 +9,8 @@ const createOrderHandlers = async ({ products,
   delivery_date,
   userId}
 ) => {
-  console.log('products****',products)
 
   try {
-
     // Crear la orden en la base de datos
     const order = await Order.create({
       total_amount,
@@ -32,20 +30,20 @@ const createOrderHandlers = async ({ products,
 
     // Crear las relaciones entre la orden y los productos en la tabla intermedia OrderProduct
     for (const product of products) {
-      const { productId, quantity, size, name, main_picture_url} = product;
+      const { productId, quantity, size, name, picture_url} = product;
 
       // Buscar el producto correspondiente
       const productObj = await Product.findByPk(productId);
 
       if (productObj) {
         // Crear el OrderProduct con los datos proporcionados
-        const mainPictureUrlArray = Array.isArray(main_picture_url)
-        ? main_picture_url
-        : [main_picture_url];
+        const mainPictureUrlArray = Array.isArray(picture_url)
+        ? picture_url
+        : [picture_url];
         await OrderProduct.create({
           orderId: order.id,
           productId: productObj.id,
-          main_picture_url: mainPictureUrlArray,
+          picture_url: mainPictureUrlArray,
           name,
           quantity,
           size,
