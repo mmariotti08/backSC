@@ -17,8 +17,6 @@ module.exports = (sequelize) => {
       },
       status: {
         type: DataTypes.STRING,
-        allowNull: false,
-        defaultValue: "pending",
       },
       payment_method: {
         type: DataTypes.STRING,

@@ -1,18 +1,21 @@
 const { Order, User, Product, OrderProduct } = require("../../db");
 
-const createOrderHandlers = async (
-  products,
+const createOrderHandlers = async ({ products,
+  status,
   total_amount,
   description,
   payment_method,
   shipping_address,
   delivery_date,
-  userId
+  userId}
 ) => {
+
   try {
+
     // Crear la orden en la base de datos
     const order = await Order.create({
       total_amount,
+      status,
       description,
       payment_method,
       shipping_address,

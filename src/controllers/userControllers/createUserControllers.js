@@ -1,5 +1,6 @@
 const {createUserHandlers}=require('../../handlers/userHandlers/createUserHandlers')
 const {encryptPassword}=require('../../helpers/helpers')
+const{transporter}=require('../../mail/mailer')
 
 const createUserControllers=async(req,res)=>{
     try{
