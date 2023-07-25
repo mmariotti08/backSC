@@ -4,6 +4,7 @@ const stocksRoutes = require('./stocksRoutes');
 const fillRoutes = require('./fillRoutes')
 const userRoutes=require('./userRoutes')
 const orderRoutes=require('./orderRoutes')
+const authRoutes=require('./authRoutes');
 const paymentRoutes=require('./paymentRoutes')
 
 
@@ -15,10 +16,12 @@ router.use('/products', productsRoutes);
 
 router.use('/stocks', stocksRoutes);
 
-router.use('/user', userRoutes)
+router.use('/user', userRoutes);
 
-router.use('/order', orderRoutes)
+router.use('/order', orderRoutes);
 
-router.use('/payment', paymentRoutes)
+router.use('/auth', authRoutes);
+
+router.use('/payment', paymentRoutes);
 
 module.exports = router;

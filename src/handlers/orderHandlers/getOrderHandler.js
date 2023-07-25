@@ -5,11 +5,7 @@ const getOrdersHandler = async (userId) => {
     if (userId){
       const findOrder= await Order.findOne({
         where: {userId},
-        include: [
-          {
-            model: OrderProduct
-          }
-        ]
+        include: OrderProduct
       })
       if(findOrder){
         return findOrder;
@@ -19,11 +15,7 @@ const getOrdersHandler = async (userId) => {
 
     }else{
       const orders = await Order.findAll({
-        include: [
-          {
-            model: OrderProduct
-          }
-        ]
+        include: OrderProduct
       });
       if (orders.length>0){
         return orders;
