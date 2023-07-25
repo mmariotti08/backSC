@@ -6,6 +6,7 @@ const receiveWebHookHandlers = async (payment) => {
   try {
     if (payment.type === 'payment') {
       const data = await mercadopago.payment.findById(payment['data.id']);
+      console.log('dataaaaaaaaaa',data.response.additional_info)
 
       const cleanData = {
         userId: data.body.external_reference,
@@ -14,12 +15,15 @@ const receiveWebHookHandlers = async (payment) => {
         status: data.body.status_detail,
         description: 'ShopConnect the best shoes, Buenos Aires-Argentina 🌎👟',
         delivery_date: data.body.date_approved,
-        products: data.response.additional_info.items.map(element => ({
+        products: data.response.additional_info.items.map((element) => ({
           productId: element.id,
+          name: element.title,
+          main_picture_url: element.picture_url.map(element.main_picture_url((img) => img)),
           size: element.category_id,
           quantity: element.quantity
         }))
       };
+
 
       const { userId, payment_method, total_amount, description, products, delivery_date, status } = cleanData;
 
