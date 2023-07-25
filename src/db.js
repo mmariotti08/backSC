@@ -15,6 +15,11 @@ const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}
 //     native: false
 // });
 
+// const sequelize = new Sequelize(DB_DEPLOY, {
+//     logging: false,
+//     native: false
+// });
+
 const basename = path.basename(__filename);
 
 const modelDefiners = [];
