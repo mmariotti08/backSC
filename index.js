@@ -65,7 +65,7 @@ conn.sync({ force: true })
             });
 
             const createdOrder = await conn.models.Order.create({
-                // userId: user.dataValues.id,
+                userId: user.dataValues.id,
                 total_amount: order.total_amount,
                 description: order.description,
                 payment_method: order.payment_method,
