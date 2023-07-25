@@ -8,7 +8,7 @@ const createOrder=async(req,res)=>{
     console.log('dataaa', data);
     const product=data.cardPey
     console.log('prtoduttt', product);
-    const user=data.idUser
+    const user=data.user
     console.log('iduser', user);
 
     try{
@@ -44,12 +44,18 @@ const createOrder=async(req,res)=>{
             external_reference: user.id,
             installments: 1,
             back_urls:{
-                success: 'http://localhost:3000/successfull',
-                failure: 'http://localhost:3000/',
-                pending: 'http://localhost:3001/order/payment/pending',
+                success: 'https://shopconnectt.onrender.com/successfull',
+                failure: 'https://shopconnectt.onrender.com/',
+                pending: 'https://shopconnect-bj22.onrender.com/order/payment/pending',
             },
-            notification_url: 'https://34ff-152-168-219-181.ngrok-free.app/payment/webhook'
+            notification_url: 'https://shopconnectt.onrender.com/payment/webhook'
         
+
+        //     success: 'localhost3000/successfull',
+        //     failure: 'localhost3000/',
+        //     pending: 'localhost3001/order/payment/pending',
+        // },
+        // notification_url: 'localhost3001/payment/webhook'
             
         
         });
