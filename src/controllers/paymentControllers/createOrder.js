@@ -5,8 +5,11 @@ const {TOKEN_MP } = process.env;
 
 const createOrder=async(req,res)=>{
     const data=req.body
+    console.log('dataaa', data);
     const product=data.cardPey
+    console.log('prtoduttt', product);
     const user=data.idUser
+    console.log('iduser', user);
 
     try{
         mercadopago.configure({
@@ -23,6 +26,8 @@ const createOrder=async(req,res)=>{
             category_id: element.size
         })): [];
 
+        console.log('itemsproduct', itemsProduct);
+
 
 
         const result= await mercadopago.preferences.create({
@@ -30,17 +35,20 @@ const createOrder=async(req,res)=>{
             external_reference: user.id,
             installments: 1,
             back_urls:{
-                success: 'http://localhost:3001/payment/success', 
-                failure: 'http://localhost:3001/payment/failure',
-                pending: 'http://localhost:3001/payment/pending',
+                success: 'https://shopconnectt.onrender.com/successfull/',
+                failure: 'https://shopconnect-bj22.onrender.com/payment/failure',
+                pending: 'https://shopconnect-bj22.onrender.com/payment/pending',
             },
-            notification_url: 'https://9884-2803-9800-9001-c29f-886e-5ad6-d3fa-a7e.ngrok-free.app/payment/webhook'
+            notification_url: 'https://shopconnect-bj22.onrender.com/payment/webhook'
         });
 
-    
+        console.log('result.body', result.body);
+
+         //https://shopconnect-bj22.onrender.com/
         res.send(result.body)
 
     }catch(error){
+        console.error(error)
         return {error: error.message}
     }
 }

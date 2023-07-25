@@ -52,7 +52,7 @@ conn.sync({ force: true })
 			};
 		});
 
-		await conn.models.User.bulkCreate(usersData);
+        await Promise.all(usersData.map(userData => conn.models.User.create(userData)));
     })
     .then(async () => {
         const response = await axios.get('http://localhost:5000/order');
