@@ -8,7 +8,7 @@ const createOrder=async(req,res)=>{
     console.log('dataaa', data);
     const product=data.cardPey
     console.log('prtoduttt', product);
-    const user=data.idUser
+    const user=data.user
     console.log('iduser', user);
 
     try{
@@ -48,7 +48,7 @@ const createOrder=async(req,res)=>{
                 failure: 'http://localhost:3000/',
                 pending: 'http://localhost:3001/order/payment/pending',
             },
-            notification_url: 'https://34ff-152-168-219-181.ngrok-free.app/payment/webhook'
+            notification_url: 'https://f3f2-152-168-219-181.ngrok-free.app/payment/webhook'
         
             
         
