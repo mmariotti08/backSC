@@ -2,9 +2,9 @@ const {createOrderHandlers}=require('../../handlers/orderHandlers/createOrderHan
 
 const createOrder=async(req,res)=>{
     try{
-        let {products, total_amount, description, payment_method,shipping_address, delivery_date, userId}=req.body
+        let {products, total_amount, description, payment_method,shipping_address, delivery_date, status, userId}=req.body
 
-        const response= await createOrderHandlers({products, total_amount, description, payment_method,shipping_address, delivery_date, userId})
+        const response= await createOrderHandlers({products, total_amount, description, payment_method,shipping_address,status, delivery_date, userId})
       
         response.error ? res.status(400).send(response.error) : res.status(200).json(response);
 

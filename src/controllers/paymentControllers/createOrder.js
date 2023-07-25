@@ -16,17 +16,26 @@ const createOrder=async(req,res)=>{
             access_token: TOKEN_MP
         });
 
-        const itemsProduct = product?.length>0 ? product.map(element => ({
+        const itemsProduct = product?.length > 0
+        ? product.map((element) => {
+        const mainPictureUrlArray = Array.isArray(element.main_picture_url)
+        ? element.main_picture_url
+        : [element.main_picture_url];
+        return {
             title: element.name,
             unit_price: parseInt(element.retail_price_cents.toString().slice(0, -2)),
-            currency_id: 'ARS',
+            currency_id: "USD",
             quantity: element.quantity,
             description: element.brand_name,
+            picture_url: mainPictureUrlArray[0],
             id: element.id,
             category_id: element.size
-        })): [];
+        }}): [];
 
-        console.log('itemsproduct', itemsProduct);
+
+
+
+
 
 
 
@@ -35,11 +44,14 @@ const createOrder=async(req,res)=>{
             external_reference: user.id,
             installments: 1,
             back_urls:{
-                success: 'https://shopconnectt.onrender.com/successfull/',
-                failure: 'https://shopconnect-bj22.onrender.com/payment/failure',
-                pending: 'https://shopconnect-bj22.onrender.com/payment/pending',
+                success: 'http://localhost:3000/successfull',
+                failure: 'http://localhost:3000/',
+                pending: 'http://localhost:3001/order/payment/pending',
             },
-            notification_url: 'https://shopconnect-bj22.onrender.com/payment/webhook'
+            notification_url: 'https://34ff-152-168-219-181.ngrok-free.app/payment/webhook'
+        
+            
+        
         });
 
         console.log('result.body', result.body);

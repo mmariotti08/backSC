@@ -12,6 +12,12 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
+      name: {
+        type: DataTypes.STRING,
+      },
+      main_picture_url: {
+        type: DataTypes.ARRAY(DataTypes.STRING),
+      }
     },
     {
       // Configurar una clave primaria compuesta por productId, orderId y size
