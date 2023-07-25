@@ -20,7 +20,7 @@ const receiveWebHookHandlers = async (payment) => {
         products: data.body.additional_info.items.map((element) => ({
           productId: element.id,
           name: element.title,
-          picture_url: [element.picture_url],
+          main_picture_url: [element.picture_url],
           size: element.category_id,
           quantity: element.quantity
         }))
@@ -42,8 +42,6 @@ const receiveWebHookHandlers = async (payment) => {
 
         let id=userId
         const sendUserMail= await getUserHandlersID(id)
-        console.log('mail************',sendUserMail.dataValues)
-        console.log('sindatavalues',sendUserMail)
         await transporter.sendMail({
           from: 'shopconnecthenry@gmail.com',
           to: sendUserMail.dataValues.mail,

@@ -21,7 +21,7 @@ const createOrder=async(req,res)=>{
         return {
             title: element.name,
             unit_price: parseInt(element.retail_price_cents.toString().slice(0, -2)),
-            currency_id: 'ARS',
+            currency_id: "USD",
             quantity: element.quantity,
             description: element.brand_name,
             picture_url: mainPictureUrlArray[0],
@@ -35,10 +35,10 @@ const createOrder=async(req,res)=>{
             installments: 1,
             back_urls:{
                 success: 'http://localhost:3000/successfull',
-                failure: 'http://localhost:3001/order/payment/failure',
+                failure: 'http://localhost:3000/',
                 pending: 'http://localhost:3001/order/payment/pending',
             },
-            notification_url: 'https://fcae-2803-9800-9001-c29f-6833-3c06-877e-7f5c.ngrok-free.app/payment/webhook'
+            notification_url: 'https://34ff-152-168-219-181.ngrok-free.app/payment/webhook'
         
             
         
