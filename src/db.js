@@ -9,16 +9,11 @@ const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}
     logging: false,
     native: false
 });
-// console.log("db-deploy",DB_DEPLOY)
 // const sequelize = new Sequelize(DB_DEPLOY, {
 //     logging: false,
 //     native: false
 // });
 
-// const sequelize = new Sequelize(DB_DEPLOY, {
-//     logging: false,
-//     native: false
-// });
 
 const basename = path.basename(__filename);
 
@@ -45,9 +40,6 @@ Stock.belongsTo(Product, { foreignKey: 'productId' });
 User.hasMany(Order,{ foreignKey: 'userId'});
 Order.belongsTo(User,{foreignKey: 'userId'});
 
-/* Product.belongsToMany(Order, {through: 'orderProduct'})
-Order.belongsToMany(Product, {through: 'orderProduct'}) */
-// Relaciones aquí
 Product.hasMany(OrderProduct, { foreignKey: "productId" });
 OrderProduct.belongsTo(Product, { foreignKey: "productId" });
 
