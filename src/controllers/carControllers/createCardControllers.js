@@ -4,7 +4,6 @@ const createCardControllers=async(req,res)=>{
     try{
         const data=req.body
 
-        console.log('dataaa****', data)
         const cleanData={
             productId: data.item.id,
             iD_User: data.user.id,
@@ -15,14 +14,16 @@ const createCardControllers=async(req,res)=>{
             quantity: data.item.quantity
         }
         const {productId, iD_User, name, main_picture_url, retail_price_cents, size, quantity}=cleanData
-        console.log('cleanData******',cleanData)
 
         const response= await createCardHandlers({productId, iD_User, name, main_picture_url, retail_price_cents, size, quantity})
         console.log('responseControllers', response)
 
         response.error ? res.status(400).send(response.error) : res.status(200).json(response);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ab6e0c8a16b051d544ce657bc4320da263af6ce7
     }catch(error){
 
         return res.status(500).json({error: error.message});
