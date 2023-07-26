@@ -4,7 +4,7 @@ const deleteOneCarHandler=async(id)=>{
         const deleteOneCar= await Car.destroy(
             {where: {id}}
         )
-        if(!deleteOneCar) {
+        if(deleteOneCar.error) {
             return {error: `Cant found shoes id:  ${id}`}
         }else {
             return {message: `Shoes deleted successfully`};
