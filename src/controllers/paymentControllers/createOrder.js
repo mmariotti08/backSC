@@ -44,7 +44,7 @@ const createOrder=async(req,res)=>{
             external_reference: user.id,
             installments: 1,
             back_urls:{
-                success: 'https://shopconnectt.onrender.com//successfull',
+                success: 'https://shopconnectt.onrender.com/successfull',
                 failure: 'https://shopconnectt.onrender.com/',
                 pending: 'https://shopconnect-bj22.onrender.com/order/payment/pending',
             },
