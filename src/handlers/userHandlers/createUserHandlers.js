@@ -9,7 +9,6 @@ const createUserHandlers = async ({ name, mail, password, phone, last_name, addr
       defaults: { name, password, last_name, phone, address }
     });
 
-
     if (create) {
       const userData = {
         id: user.id,

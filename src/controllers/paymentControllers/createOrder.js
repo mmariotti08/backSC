@@ -6,6 +6,7 @@ const createOrder=async(req,res)=>{
     const data=req.body
     const product=data.cardPey
     const user=data.user
+    console.log('carrito',product)
    
     try{
         mercadopago.configure({
@@ -37,7 +38,7 @@ const createOrder=async(req,res)=>{
                 failure: 'http://localhost:3000/',
                 pending: 'http://localhost:3001/order/payment/pending',
             },
-            notification_url: 'https://18b3-2803-9800-9001-c29f-e9bf-6c1-ef63-83bc.ngrok-free.app/payment/webhook'
+            notification_url: 'https://b8a3-2803-9800-9001-c29f-e50f-546b-6bc7-9391.ngrok-free.app/payment/webhook'
         
         });
 

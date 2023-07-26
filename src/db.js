@@ -31,7 +31,7 @@ let entries = Object.entries(sequelize.models);
 let capsEntries = entries.map((entry) => [entry[0][0].toUpperCase() + entry[0].slice(1), entry[1]]);
 sequelize.models = Object.fromEntries(capsEntries);
 
-const { Product, Stock, User, Order, OrderProduct } = sequelize.models;
+const { Product, Stock, User, Order, OrderProduct, Car } = sequelize.models;
 
 // relaciones aquí
 Product.hasMany(Stock, { foreignKey: 'productId' });
@@ -45,6 +45,14 @@ OrderProduct.belongsTo(Product, { foreignKey: "productId" });
 
 Order.hasMany(OrderProduct, { foreignKey: "orderId" });
 OrderProduct.belongsTo(Order, { foreignKey: "orderId" });
+
+Car.hasMany(Product, { foreignKey: 'productId' });
+Product.belongsTo(Car, { foreignKey: 'productId' });
+
+User.hasMany(Car, { foreignKey: 'userId' });
+Car.belongsTo(User, { foreignKey: 'userId' });
+
+
 
 
 module.exports = {

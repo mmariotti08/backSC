@@ -6,7 +6,7 @@ const userRoutes=require('./userRoutes')
 const orderRoutes=require('./orderRoutes')
 const authRoutes=require('./authRoutes');
 const paymentRoutes=require('./paymentRoutes')
-
+const carRoutes=require('./carRoutes')
 
 const router = Router();
 
@@ -23,5 +23,7 @@ router.use('/order', orderRoutes);
 router.use('/auth', authRoutes);
 
 router.use('/payment', paymentRoutes);
+
+router.use('/car', carRoutes);
 
 module.exports = router;
