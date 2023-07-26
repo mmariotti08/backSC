@@ -7,26 +7,26 @@ const createCardHandlers=async({productId, iD_User, name, main_picture_url, reta
         const findProduct= await Product.findByPk(productId);
         console.log('findProduct++++++++',findProduct)
 
+        let id=iD_User
         const findUser= await User.findOne({
-            where: { id: iD_User },
+            where: { id },
         });
         console.log('finduser++++++++',findUser)
 
         if (findUser && findProduct){
-            const createProduct= await Car.create( {
+            const createProduct= await Car.create({
 
                 productId: findProduct.id, userId: findUser.id , name, main_picture_url, retail_price_cents, size, quantity
             })
+
             if (createProduct){
                 return createProduct;
             }else{
                 return {error: 'Product not saved'}
             }
-
         }else{
             return {error: 'User not found'}
         }
-
     }catch(error){
 
         return { error: error.message };

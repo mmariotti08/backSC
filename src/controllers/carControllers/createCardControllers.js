@@ -18,10 +18,10 @@ const createCardControllers=async(req,res)=>{
         console.log('cleanData******',cleanData)
 
         const response= await createCardHandlers({productId, iD_User, name, main_picture_url, retail_price_cents, size, quantity})
+        console.log('responseControllers', response)
 
         response.error ? res.status(400).send(response.error) : res.status(200).json(response);
 
-        console.log('responseControllers', response)
 
     }catch(error){
 
