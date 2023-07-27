@@ -20,10 +20,6 @@ const createCardControllers=async(req,res)=>{
 
         response.error ? res.status(400).send(response.error) : res.status(200).json(response);
 
-<<<<<<< HEAD
-
-=======
->>>>>>> ab6e0c8a16b051d544ce657bc4320da263af6ce7
     }catch(error){
 
         return res.status(500).json({error: error.message});

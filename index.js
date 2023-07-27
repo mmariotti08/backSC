@@ -4,7 +4,7 @@ const { conn } = require("./src/db.js");
 
 const PORT = 3001;
 
-conn.sync({ force: false })
+conn.sync({ force: false  })
     // .then(async () => {
     //     const response = await axios.get('http://localhost:5000/sneakers');
 
