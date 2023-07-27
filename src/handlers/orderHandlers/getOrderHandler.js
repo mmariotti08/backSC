@@ -1,4 +1,4 @@
-const { Order, OrderProduct } = require('../../db');
+const { Order, OrderProduct} = require('../../db');
 
 const getOrdersHandler = async (userId) => {
   try {
