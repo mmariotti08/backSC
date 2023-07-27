@@ -1,6 +1,6 @@
 const {User}=require('../../db')
 
-const updateUserHandlers=async( name, phone, last_name, address, active, administrator, id)=>{
+const updateUserHandlers=async( name, phone, last_name, picture, address, active, administrator, id)=>{
 
     try{
         const user= await User.findByPk(id);
@@ -12,6 +12,7 @@ const updateUserHandlers=async( name, phone, last_name, address, active, adminis
         if (name) updatedData.name = name;
         if (phone) updatedData.phone = phone;
         if (last_name) updatedData.last_name = last_name;
+        if (picture) updatedData.picture = picture;
         if (address) updatedData.address= address;
         if (active !==undefined) updatedData.active= active;
         if (administrator !==undefined) updatedData.administrator= administrator;
