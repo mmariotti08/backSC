@@ -1,15 +1,11 @@
-
 const mercadopago=require('mercadopago')
 require('dotenv').config();
 const {TOKEN_MP } = process.env;
 
 const createOrder=async(req,res)=>{
     const data=req.body
-    console.log('dataaa', data);
     const product=data.cardPey
-    console.log('prtoduttt', product);
     const user=data.user
-    console.log('iduser', user);
 
     try{
         mercadopago.configure({
@@ -24,20 +20,13 @@ const createOrder=async(req,res)=>{
         return {
             title: element.name,
             unit_price: parseInt(element.retail_price_cents.toString().slice(0, -2)),
-            currency_id: "USD",
+            currency_id: 'USD',
             quantity: element.quantity,
             description: element.brand_name,
             picture_url: mainPictureUrlArray[0],
             id: element.id,
             category_id: element.size
         }}): [];
-
-
-
-
-
-
-
 
         const result= await mercadopago.preferences.create({
             items: itemsProduct,
@@ -60,7 +49,7 @@ const createOrder=async(req,res)=>{
         
         });
 
-        console.log('result.body', result.body);
+        console.log(result.body);
 
          //https://shopconnect-bj22.onrender.com/
         res.send(result.body)

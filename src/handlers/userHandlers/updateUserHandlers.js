@@ -20,11 +20,15 @@ const updateUserHandlers=async( name, phone, last_name, address, active, adminis
             await User.update(updatedData, {
               where: {
                 id: id,
-              },
+              }
             });
         }
+
+        const updatedUser = await User.findByPk(id, {
+          attributes: { exclude: ['password'] }
+        });
         
-        return find = await User.findByPk(id);
+        return updatedUser
         
     }catch(error){
 

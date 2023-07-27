@@ -1,5 +1,5 @@
 const pendingControllers=async(req,res)=>{
-    res.send('pendiente')
+    res.send('pending')
 
 }
 
