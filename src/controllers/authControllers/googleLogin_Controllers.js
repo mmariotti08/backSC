@@ -30,6 +30,7 @@ const googleLogin = async (req, res) => {
             id: user.id,
             name: user.name,
             last_name: user.last_name,
+            mail: user.mail,
             phone: user.phone,
             address: user.address,
             picture: user.picture,
