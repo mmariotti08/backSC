@@ -5,16 +5,8 @@ const {TOKEN_MP } = process.env;
 const createOrder=async(req,res)=>{
     const data=req.body
     const product=data.cardPey
-<<<<<<< HEAD
-    console.log('prtoduttt', product);
     const user=data.user
-    console.log('iduser', user);
 
-=======
-    const user=data.user
-    console.log('carrito',product)
-   
->>>>>>> luis-back-martes
     try{
         mercadopago.configure({
             access_token: TOKEN_MP
@@ -45,7 +37,6 @@ const createOrder=async(req,res)=>{
                 failure: 'https://shopconnectt.onrender.com/',
                 pending: 'https://shopconnect-bj22.onrender.com/order/payment/pending',
             },
-<<<<<<< HEAD
             notification_url: 'https://shopconnect-bj22.onrender.com/payment/webhook'
         
           
@@ -55,9 +46,6 @@ const createOrder=async(req,res)=>{
         // },
         // notification_url: 'localhost3001/payment/webhook'
             
-=======
-            notification_url: 'https://b8a3-2803-9800-9001-c29f-e50f-546b-6bc7-9391.ngrok-free.app/payment/webhook'
->>>>>>> luis-back-martes
         
         });
 

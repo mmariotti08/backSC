@@ -9,25 +9,13 @@ const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}
   logging: false,
   native: false
 });
-<<<<<<< HEAD
 
 // console.log("db-deploy",DB_DEPLOY)
 
-=======
->>>>>>> luis-back-martes
 // const sequelize = new Sequelize(DB_DEPLOY, {
 //     logging: false,
 //     native: false
 // });
-
-<<<<<<< HEAD
-
-// const sequelize = new Sequelize(DB_DEPLOY, {
-//     logging: false,
-//     native: false
-// });
-=======
->>>>>>> luis-back-martes
 
 const basename = path.basename(__filename);
 
@@ -60,10 +48,9 @@ OrderProduct.belongsTo(Product, { foreignKey: "productId" });
 Order.hasMany(OrderProduct, { foreignKey: "orderId" });
 OrderProduct.belongsTo(Order, { foreignKey: "orderId" });
 
-<<<<<<< HEAD
 User.belongsToMany(Product, { through: 'Reviews' })
 Product.belongsToMany(User, { through: 'Reviews' })
-=======
+
 Car.hasMany(Product, { foreignKey: 'productId' });
 Product.belongsTo(Car, { foreignKey: 'productId' });
 
@@ -72,7 +59,6 @@ Car.belongsTo(User, { foreignKey: 'userId' });
 
 
 
->>>>>>> luis-back-martes
 
 module.exports = {
   ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');

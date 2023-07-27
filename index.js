@@ -7,7 +7,6 @@ const PORT = 3001;
 conn.sync({ force: false })
     // .then(async () => {
     //     const response = await axios.get('http://localhost:5000/sneakers');
-
 	// 	const productData = response.data.map(product => {
 	// 		return {
 	// 			name: product.name,
