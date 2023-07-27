@@ -2,13 +2,14 @@ const {Car, User, Product}=require('../../db')
 
 const createCardHandlers=async({productId, iD_User, name, main_picture_url, retail_price_cents, size, quantity})=>{
     try{
-        
         const findProduct= await Product.findByPk(productId);
+        
 
         const id =  iD_User
-        const findUser = await User.findOne({
-            where: { id },
-        });
+        console.log(id);
+        const findUser = await User.findOne({ where: { id } });
+
+        console.log(findUser);
 
         if (findUser && findProduct){
             const createProduct= await Car.create( {

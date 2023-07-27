@@ -22,10 +22,15 @@ const googleLogin = async (req, res) => {
             user = await auth_Handlers.createUser({ name: given_name, last_name: family_name, mail: email, picture });
         };
 
+        if (!user.active) {
+            return res.status(400).json({ message: "Banned user" });
+        }
+
         const jwtToken = jwt.sign({
             id: user.id,
             name: user.name,
             last_name: user.last_name,
+            mail: user.mail,
             phone: user.phone,
             address: user.address,
             picture: user.picture,

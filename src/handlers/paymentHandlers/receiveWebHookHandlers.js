@@ -3,6 +3,8 @@ const { transporter } = require('../../mail/mailer');
 const { createOrderHandlers } = require('../../handlers/orderHandlers/createOrderHandlers');
 const { updateStockHandlers } = require('../../handlers/stocksHandlers/updateStockHandlers');
 const {getUserHandlersID}=require('../../handlers/userHandlers/getUserHandlersID')
+const { deleteOneCarHandler } = require('../carHandlers/deleteOneCarHandler')
+const { getCarHandlers } = require('../carHandlers/getCarHandlers');
 
 const receiveWebHookHandlers = async (payment) => {
   try {
@@ -31,6 +33,13 @@ const receiveWebHookHandlers = async (payment) => {
       if (status === 'accredited') {
         const order = await createOrderHandlers({ userId, payment_method, total_amount, description, products, delivery_date, status });
 
+        const cart = await getCarHandlers()
+
+        const newCart = []
+        cart && newCart === cart.filter(c => c.userId === userId);
+
+        newCart.map( async c => await deleteOneCarHandler(c.userId));
+
         if (order.error) {
           return { error: order.error };
         }
@@ -52,6 +61,7 @@ const receiveWebHookHandlers = async (payment) => {
         return { order, update };
 
       }
+
       await transporter.sendMail({
         from: 'shopconnecthenry@gmail.com',
         to: sendUserMail.dataValues.mail,
