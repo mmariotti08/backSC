@@ -1,5 +1,5 @@
 const failureControllers=async(req,res)=>{
-    res.send('fallo pago')
+    res.send('fail pay')
 
 }
 

@@ -1,10 +1,8 @@
-
 const {receiveWebHookHandlers}=require('../../handlers/paymentHandlers/receiveWebHookHandlers')
 
 const receiveWebHookControllers = async (req, res) => {
     try {
       const payment = req.query;
-
 
       const response=receiveWebHookHandlers(payment)
 
